@@ -1,0 +1,11 @@
+# CEEB (Heating Devices) Configuration
+# 'TERC number is now defined globally at the top of this config file'
+# 'Ścieżka do pliku CSV z danymi urządzeń CEEB'
+# 'Path to the CSV file with CEEB device data'
+ceeb_devices_file_path: input/devices.csv
+# 'Ścieżka do pliku CSV z danymi klasy CEEB'
+# 'Path to the CSV file with CEEB class data'
+ceeb_class_file_path: input/classes.csv
+# 'Schemat bazy danych dla tymczasowych tabel CEEB'
+# 'Database schema for temporary CEEB tables'
+tmp_table_schema: tmp

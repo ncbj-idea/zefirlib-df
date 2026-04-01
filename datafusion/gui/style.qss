@@ -1,0 +1,155 @@
+/* Variables */
+:root {
+    --primary-color: #0d6efd;
+    --primary-hover: #0b5ed7;
+    --primary-active: #0a58ca;
+    --primary-text: #ffffff;
+
+    --disabled-primary-bg: #94a3b8;
+    --disabled-text: #ffffff;
+
+    --secondary-color: #64748b;
+    --secondary-border: #cbd5e1;
+    --secondary-hover-bg: #f1f5f9;
+    --secondary-hover-color: #475569;
+    --secondary-hover-border: #94a3b8;
+
+    --danger-color: #dc3545;
+    --danger-hover: #bb2d3b;
+    --danger-active: #b02a37;
+    --danger-text: #ffffff;
+
+    --terminal-bg: #0b0e11;
+    --terminal-text: #e9ecef;
+    --terminal-border: #ced4da;
+}
+/* Primary button */
+QPushButton#primaryButton {
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: 600;
+}
+QPushButton#primaryButton:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-active);
+}
+QPushButton#primaryButton:pressed {
+    background-color: var(--primary-active);
+    border-color: var(--primary-active);
+}
+QPushButton#primaryButton:disabled {
+    background-color: var(--disabled-primary-bg);
+    border-color: var(--disabled-primary-bg);
+    color: var(--disabled-text);
+}
+
+/* Primary outlined button */
+QPushButton#primaryOutlinedButton {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: 500;
+}
+QPushButton#primaryOutlinedButton:hover {
+    background-color: var(--secondary-hover-bg);
+    border-color: var(--primary-hover);
+    color: var(--primary-hover);
+}
+QPushButton#primaryOutlinedButton:pressed {
+    background-color: rgba(13, 110, 253, 0.16);
+    border-color: var(--primary-active);
+    color: var(--primary-active);
+}
+QPushButton#primaryOutlinedButton:disabled {
+    color: var(--disabled-text);
+    border-color: var(--secondary-border);
+}
+
+/* Secondary button */
+QPushButton#secondaryButton {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-border);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: 500;
+}
+QPushButton#secondaryButton:hover {
+    background-color: var(--secondary-hover-bg);
+    border-color: var(--secondary-hover-border);
+    color: var(--secondary-hover-color);
+}
+QPushButton#secondaryButton:disabled {
+    color: var(--disabled-text);
+    border-color: var(--secondary-border);
+}
+
+/* Secondary contained button */
+QPushButton#secondaryContainedButton {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: 500;
+}
+QPushButton#secondaryContainedButton:hover {
+    background-color: var(--secondary-hover-color);
+    border-color: var(--secondary-hover-color);
+}
+QPushButton#secondaryContainedButton:pressed {
+    background-color: #364758;
+    border-color: #364758;
+}
+QPushButton#secondaryContainedButton:disabled {
+    background-color: var(--disabled-primary-bg);
+    border-color: var(--disabled-primary-bg);
+    color: var(--disabled-text);
+}
+
+/* Danger button (outline) */
+QPushButton#dangerButton {
+    background-color: transparent;
+    color: var(--danger-color);
+    border: 1px solid var(--danger-color);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: 600;
+}
+QPushButton#dangerButton:hover {
+    background-color: rgba(220, 53, 69, 0.08);
+    border-color: var(--danger-hover);
+    color: var(--danger-hover);
+}
+QPushButton#dangerButton:pressed {
+    background-color: rgba(220, 53, 69, 0.16);
+    border-color: var(--danger-active);
+    color: var(--danger-active);
+}
+
+/* Inputs */
+QLineEdit:focus {
+    border: 1px solid var(--primary-color);
+    outline: none;
+}
+
+/* Input text horizontal padding */
+QLineEdit, QTextEdit {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Terminal styling */
+QPlainTextEdit#terminal {
+    background-color: var(--terminal-bg);
+    color: var(--terminal-text);
+    border: 1px solid var(--terminal-border);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-family: Menlo, Monaco, 'Courier New', monospace;
+}

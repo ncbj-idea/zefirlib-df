@@ -1,0 +1,20 @@
+# Default logging config
+# May be changed by pointing to new file using env: LOGGING_CONFIG_PATH
+version: 1
+formatters:
+  simple:
+    format: "%(asctime)s [%(name)s][%(levelname)-7s][PID: %(process)d][%(filename)s:%(lineno)s - %(funcName)20s()] %(message)s"
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: simple
+    stream: ext://sys.stdout
+loggers:
+  datafusion:
+    level: INFO
+    handlers: [console]
+    propagate: no
+
+root:
+  handlers: [console]
+  level: DEBUG

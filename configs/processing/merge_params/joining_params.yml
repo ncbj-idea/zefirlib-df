@@ -1,0 +1,120 @@
+# Joining Parameters for Merge Configuration
+var_ceeb: "Rodzaj_budynku_A"
+ceeb_single: "Budynek jednorodzinny (w tym w zabudowie bliźniaczej i szeregowej)"
+ceeb_multi: "Budynek wielorodzinny"
+ceeb_other: "Budynek zbiorowego zamieszkania"
+single_order:
+  - "Budynki mieszkalne jednorodzinne"
+  - "Budynki o dwóch mieszkaniach i wielomieszkaniowe"
+  - "Budynki o trzech i więcej mieszkaniach"
+  - "Budynki zbiorowego zamieszkania"
+  - "others"
+multi_order:
+  - "Budynki o trzech i więcej mieszkaniach"
+  - "Budynki o dwóch mieszkaniach i wielomieszkaniowe"
+  - "Budynki zbiorowego zamieszkania"
+  - "Budynki mieszkalne jednorodzinne"
+  - "others"
+other_order:
+  - "Budynki zbiorowego zamieszkania"
+  - "Budynki o dwóch mieszkaniach i wielomieszkaniowe"
+  - "Budynki o trzech i więcej mieszkaniach"
+  - "Budynki mieszkalne jednorodzinne"
+  - "others"
+nonliving_order:
+  - "Budynki o trzech i więcej mieszkaniach"
+  - "Budynki o dwóch mieszkaniach i wielomieszkaniowe"
+  - "Budynki mieszkalne jednorodzinne"
+
+heat_source_analysis_params:
+  # 'Średnia powierzchnia mieszkania w m2'
+  # 'Average apartment area in m2'
+  avg_apartment_area: 68.3
+  # 'Mnożnik GUS dla szacowania liczby mieszkań'
+  # 'GUS multiplicator for apartment count estimation'
+  gus_multiplicator: 1.0
+  # 'Nazwa kolumny współczynnika powierzchni użytkowej do powierzchni zabudowy'
+  # 'Name of the floor area ratio column'
+  floor_area_ratio_column: "wspolczynnik_powierzchni_uzytkowej_do_powierzchni_zabudowy"
+  # 'Minimalna proporcja źródła ciepła dla budynków wielorodzinnych'
+  # 'Minimum source proportion threshold for multi-family buildings'
+  min_source_proportion: 0.10
+  # 'Próg dla usuwania par źródeł ciepła o niskiej wadze'
+  # 'Threshold for removing low-weight heat source pairs'
+  trash_threshold: 0.25
+  # 'Mapowanie nazw źródeł ciepła na wewnętrzne nazwy'
+  # 'Mapping of heat source names to internal names'
+  source_translation:
+    "Miejska sieć ciepłownicza / ciepło systemowe / lokalna sieć ciepłownicza": "district_heating"
+    "Miejska sieć ciepłownicza": "district_heating"
+    "Kocioł gazowy / bojler gazowy / podgrzewacz gazowy przepływowy / kominek gazowy": "gas_boiler"
+    "Kocioł gazowy": "gas_boiler"
+    "Kocioł olejowy": "oil_boiler"
+    "Kocioł na paliwo stałe (węgiel, drewno, pellet lub inny rodzaj biomasy) z automatycznym podawaniem paliwa / z podajnikiem": "solid_fuel_auto"
+    "Kocioł na paliwo stałe - pod. automatyczne": "solid_fuel_auto"
+    "Kocioł na paliwo stałe (węgiel, drewno, pellet lub inny rodzaj biomasy) z ręcznym podawaniem paliwa / zasypowy": "solid_fuel_manual"
+    "Kocioł na paliwo stałe - pod. ręczne": "solid_fuel_manual"
+    "Ekoprojekt": "boiler_new"
+    "Klasa_5": "boiler_new"
+    "Klasa_4": "boiler_old"
+    "Klasa_3": "boiler_old"
+    "Poniżej_klasy_3_lub_brak_informacji": "boiler_old"
+    "Pompa ciepła": "heat_pump"
+    "Ogrzewanie elektryczne / bojler elektryczny": "electric_heating"
+    "Ogrzewanie elektryczne": "electric_heating"
+    "Kolektory słoneczne do ciepłej wody użytkowej lub z funkcją wspomagania ogrzewania": "electric_heating"
+    "Trzon kuchenny / piecokuchnia / kuchnia węglowa": "kitchen_stove"
+    "Trzon kuchenny": "kitchen_stove"
+    "Piec kaflowy na paliwo stałe (węgiel, drewno, pellet lub inny rodzaj biomasy)": "tile_stove"
+    "Piec kaflowy": "tile_stove"
+    "Kominek / koza / ogrzewacz powietrza na paliwo stałe (drewno, pellet lub inny rodzaj biomasy, węgiel)": "fireplace"
+    "Kominek": "fireplace"
+    "Inne": "other"
+    "Brak informacji": "no_info"
+  # 'Hierarchia źródeł ogrzewania centralnego (C.O.)'
+  # 'Hierarchy of central heating sources (C.O.)'
+  central_hierarchy:
+    - "district_heating"
+    - "boiler_new"
+    - "gas_boiler"
+    - "boiler_old"
+    - "oil_boiler"
+    - "heat_pump"
+    - "electric_heating"
+    - "tile_stove"
+    - "fireplace"
+    - "kitchen_stove"
+    - "other"
+    - "no_info"
+  # 'Hierarchia źródeł ciepłej wody użytkowej (C.W.U.)'
+  # 'Hierarchy of domestic hot water sources (C.W.U.)'
+  cwu_hierarchy:
+    - "district_heating"
+    - "boiler_new"
+    - "gas_boiler"
+    - "boiler_old"
+    - "oil_boiler"
+    - "heat_pump"
+    - "electric_heating"
+    - "tile_stove"
+    - "fireplace"
+    - "kitchen_stove"
+    - "other"
+    - "no_info"
+  # 'Mapowanie na nazwy kanoniczne'
+  # 'Mapping to canonical names'
+  final_mapping:
+    "gas_boiler": "Gas boiler"
+    "oil_boiler": "Oil boiler"
+    "boiler_new": "New solid fuel boiler (Class 5/Ekoprojekt)"
+    "boiler_old": "Old solid fuel boiler (Class 4 or below)"
+    "heat_pump": "Heat pump"
+    "district_heating": "District heating"
+    "electric_heating": "Electric heating"
+    "tile_stove": "Tile stove"
+    "fireplace": "Fireplace"
+    "kitchen_stove": "Kitchen stove"
+    "other": "Other"
+    "no_info": "No information"
+    "solid_fuel_auto": "Solid fuel boiler (automatic feeding)"
+    "solid_fuel_manual": "Solid fuel boiler (manual feeding)"

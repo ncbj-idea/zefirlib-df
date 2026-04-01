@@ -1,0 +1,65 @@
+# syntax=docker/dockerfile:1
+# Dockerfile for DataFusion with Apache Airflow
+# Includes workflow orchestration capabilities
+
+# ===========================================
+# Stage 1: Base with GDAL and R
+# ===========================================
+FROM apache/airflow:slim-latest-python3.12 AS base
+
+USER root
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+    gdal-bin \
+    libgdal-dev \
+    libgeos-dev \
+    gcc \
+    dos2unix \
+    libproj-dev \
+    libcurl4-openssl-dev \
+    libssl-dev \
+    libv8-dev \
+    && apt-get autoremove -yqq --purge \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* /tmp/*
+
+USER airflow
+
+# ===========================================
+# Stage 2: Builder
+# ===========================================
+FROM base AS builder
+
+ENV PROJECT_DIR=${AIRFLOW_USER_HOME_DIR}/datafusion/
+
+RUN mkdir -p ${PROJECT_DIR} && chown -R airflow:root ${PROJECT_DIR}
+
+COPY --chown=airflow:root pyproject.toml README.md alembic.ini logging.yml ${PROJECT_DIR}
+COPY --chown=airflow:root ./datafusion/ ${PROJECT_DIR}/datafusion/
+
+WORKDIR ${PROJECT_DIR}
+
+USER airflow
+RUN pip install build && \
+    python -m build
+
+# ===========================================
+# Stage 3: Final
+# ===========================================
+FROM base
+
+ENV PROJECT_DIR=${AIRFLOW_USER_HOME_DIR}/datafusion/
+
+COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/dist/*.whl ${PROJECT_DIR}
+COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/alembic.ini ${PROJECT_DIR}
+COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/datafusion/alembic/ ${PROJECT_DIR}/datafusion/alembic/
+COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/datafusion/airflow ${PROJECT_DIR}/datafusion/airflow
+COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/datafusion/sql_queries/ ${PROJECT_DIR}/datafusion/sql_queries/
+COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/datafusion/airflow/dags/ ${AIRFLOW_HOME}/dags/
+
+WORKDIR ${AIRFLOW_USER_HOME_DIR}
+
+USER airflow
+RUN pip install --no-cache-dir ${PROJECT_DIR}/*.whl \
+    && rm ${PROJECT_DIR}/*.whl

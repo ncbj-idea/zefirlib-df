@@ -1,0 +1,308 @@
+##############################
+# Postprocessing Configuration
+##############################
+
+terc: !include global.yml
+
+##############################
+# Shared Column Names
+##############################
+
+# Define column names once and reuse throughout the config
+column_names:
+  co_source: &co_source "co_source"
+  cwu_source: &cwu_source "cwu_source"
+
+##############################
+# Part 1: Creating_operat_losowania
+##############################
+
+# Thresholds & settings
+thresholds:
+  threshold_a_ratio: 0.03 # próg wag dla trash zones w A
+  threshold_b_ratio: 0.01 # próg liczebności dla trash zones w B
+  float_tol: 0 # tolerancja porównań zmiennoprzecinkowych
+
+# Text normalization (optional lower-case)
+normalize:
+  lowercase: false
+  columns:
+    - Typ_deklaracji
+    - *co_source
+    - *cwu_source
+    - nazwa_funkcji_ogolnej
+    - funkcja_szczegolowa_budynku
+
+# Lists of business values
+tourism_functions:
+  - "dom wypoczynkowy"
+  - "hotel"
+  - "pensjonat"
+  - "sanatorium"
+
+# Mapping Building_type
+building_kind:
+  by_general:
+    wielorodzinny:
+      - "Budynki o trzech i więcej mieszkaniach"
+      - "Budynki o dwóch mieszkaniach i wielomieszkaniowe"
+    jednorodzinny:
+      - "Budynki mieszkalne jednorodzinne"
+  by_specific:
+    handlowy:
+      - "centrum handlowe"
+      - "pawilon handlowo-usługowy"
+      - "apteka"
+      - "hala targowa -  do spawdzenia"
+      - "hipermarket lub supermarket"
+      - "dom towarowy lub handlowy"
+    biuro:
+      - "siedziba firmy lub firm"
+      - "inny urząd administracji publicznej"
+      - "bank"
+      - "sąd"
+      - "prokuratura"
+    przemysł:
+      - "produkcyjne"
+    nie_ujęte:
+      - "szklarnia lub cieplarnia"
+      - "garaż"
+      - "budynek gospodarczy"
+      - "toaleta publiczna"
+      - "stacja transformatorowa"
+      - "hala wystawowa"
+      - "budynek produkcyjny zwierząt hodowlanych"
+      - "korty tenisowe"
+      - "halowy tor gokartowy"
+      - "ujeżdżalnia"
+      - "pływalnia"
+      - "hala sportowa"
+      - "hala widowiskowa"
+      - "stacja transformatorowa"
+      - "elewator"
+
+# The "tenement house" rule (on/off and column names)
+kamienica_rules:
+  enabled: false
+  monument_col: "zabytek" # 1 = zabytek
+  kamienica_col: "kamienica" # "tak" = kamienica
+  apply_over:
+    - "jednorodzinny"
+    - "wielorodzinny"
+
+# Change "Solar collectors" -> "Electric heating"
+solar_to_electric:
+  enabled: true
+  centralne_value: "Kolektory słoneczne"
+  cwu_value: "Kolektory słoneczne"
+  replacement: "Ogrzewanie elektryczne"
+
+print_summaries:
+  enabled: true
+
+##############################
+# Part 2: Sampling & Inventory
+##############################
+
+# Columns used across the pipeline
+columns:
+  pow_uzytkowa: "pow_uzytkowa_m2"
+  pow_obrysu: "pow_obrysu_m2"
+  weight: "weight"
+  merged_id: "merged_id"
+  street: "ulica"
+  house_no: "numer_porzadkowy"
+  geom_wkt: "geom_wkt"
+  funk_ogolna: "nazwa_funkcji_ogolnej"
+  rodzaj_budynku: "Rodzaj_budynku"
+  centralne: *co_source
+  h3: "h3_connectivity"
+  h3_estimation: "h3_7"
+  cwu: *cwu_source
+  status: "status"
+  inwentaryzacja_flag: "inwentaryzacja"
+  lon: "longitude_centroid"
+  lat: "latitude_centroid"
+  sample_flag: "sample_ind"
+
+# Row-level filtering before sampling
+filters:
+  drop_if_status_in: ["non_join"] # drop rows with status in this list
+  drop_if_inwentaryzacja_in: ["nie"] # drop rows with inwentaryzacja in this list
+  require_non_null: [*co_source] # rows must be non-null in these columns
+
+# Sampling configuration
+sampling:
+  # main stratification column
+  strata_col: "Rodzaj_budynku"
+  # multiway strata combined key (categoricals)
+  multiway_cols: [*co_source, "h3_connectivity", *cwu_source]
+  # PPS sizes: preferred form is an explicit mapping by stratum value
+  size_by_stratum:
+    "jednorodzinny": 0.02
+    "wielorodzinny": 0.03
+    "biuro": 0.3
+    "handlowy": 0.15
+    "inny": 0.1
+  # Auxiliary variables for balancing (numeric)
+  aux_vars: ["longitude_centroid", "latitude_centroid"]
+  # Balanced-sampling approximation settings
+  cube_seed: 5693
+  float_tol: 0.0 # set to 0.0 to mimic '==' in R; >0 to allow tolerance
+  balance_iters: 2000 # number of local 1↔1 swap attempts
+
+# Inventory assignment (who gets which street) – simple round-robin
+inventory_assignment:
+  num_surveyors: 6
+  label_prefix: "Osoba_"
+  start_label: 1
+
+# Output options
+output:
+  add_empty_inventory_cols:
+    - "przydzial"
+    - "Dach"
+    - "Okna"
+    - "Wiek_budynku_p_modern"
+    - "Ocieplenie_ścian"
+    - "Uwagi"
+    - "Zrobione"
+    - "street_view"
+
+##############################
+# Part 3: Estimation & Global Values
+##############################
+
+params:
+  inventory_type: "Nowa_inwentaryzacja"
+  calib_area: true
+  calib_heat: true
+  calib_wiel: false
+  calib_gas: true
+  calib_wiek: false
+  heat_strat: "h3_connectivity"
+  h3: "h3_7"
+  gus_factor: 0.8403
+  hex_size: 0.65
+  electric_h: 0.95
+  heat_pump: 3
+  pv_power: 0.20956
+  seed_open: 789
+  seed_term: 542
+  seed_lass: 123
+  seed_h3: 598
+  seed_imputation: 359
+  mieszkalne_r: 0
+  niemieszkalne_r: 0
+  mieszkalne_pv: 0.18
+  pps_method: "systematic"
+  raking_bounds_operat_b: [-inf, inf]
+  raking_bounds_termo_b: [-inf, inf]
+  electric_heater: 0.98
+
+taxonomy:
+  mieszkalne:
+    wielorodzinny:
+      - "budynek wielorodzinny"
+      - "budynek o dwóch mieszkaniach"
+    jednorodzinny:
+      - "budynek jednorodzinny"
+  by_specific:
+    handlowy:
+      - "centrum handlowe"
+      - "pawilon handlowo-usługowy"
+      - "apteka"
+      - "hala targowa -  do spawdzenia"
+      - "hipermarket lub supermarket"
+      - "dom towarowy lub handlowy"
+    biuro:
+      - "siedziba firmy lub firm"
+      - "inny urząd administracji publicznej"
+      - "bank"
+      - "sąd"
+      - "prokuratura"
+    przemysł:
+      - "produkcyjny"
+    nie_ujęte:
+      - "szklarnia lub cieplarnia"
+      - "garaż"
+      - "budynek gospodarczy"
+      - "toaleta publiczna"
+      - "stacja transformatorowa"
+      - "hala wystawowa"
+      - "budynek produkcyjny zwierząt hodowlanych"
+      - "korty tenisowe"
+      - "halowy tor gokartowy"
+      - "ujeżdżalnia"
+      - "pływalnia"
+      - "hala sportowa"
+      - "hala widowiskowa"
+      - "stacja transformatorowa"
+      - "elewator"
+
+##############################
+# Part 4: Protostrefy
+##############################
+
+protostrefy:
+  expected_cols:
+    - zefir_termo
+    - Rodzaj_budynku
+    - powierzchnia
+    - yearly_heat_demand
+    - yearly_cooling_demand
+    - yearly_heat_water_demand
+    - max_nominal_power_pv
+    - base_nominal_power_pv
+    - boiler_new
+    - boiler_old
+    - Kocioł_gazowy
+    - Miejska_sieć_ciepłownicza
+    - Ogrzewanie_elektryczne
+    - Pompa_ciepła
+    - heat_connect
+    - heat_disconnect
+    - cwu_boiler_new
+    - cwu_boiler_old
+    - cwu_Kocioł_gazowy
+    - cwu_Miejska_sieć_ciepłownicza
+    - cwu_Ogrzewanie_elektryczne
+    - cwu_Pompa_ciepła
+    - ee_heat_demand
+    - ee_demand
+  new_cols:
+    - zefir_termo
+    - building_type
+    - usable_area_[m2]
+    - yearly_heat_demand_[kwh]
+    - yearly_cooling_demand_[kwh]
+    - yearly_heat_water_demand_[kwh]
+    - max_nominal_power_pv_[kw]
+    - base_nominal_power_pv_[kw]
+    - co_boiler_new_[%]
+    - co_boiler_old_[%]
+    - co_Kocioł_gazowy_[%]
+    - co_Miejska_sieć_ciepłownicza_[%]
+    - co_Ogrzewanie_elektryczne_[%]
+    - co_Pompa_ciepła_[%]
+    - heat_connect
+    - heat_disconnect
+    - cwu_boiler_new_[%]
+    - cwu_boiler_old_[%]
+    - cwu_Kocioł_gazowy_[%]
+    - cwu_Miejska_sieć_ciepłownicza_[%]
+    - cwu_Ogrzewanie_elektryczne_[%]
+    - cwu_Pompa_ciepła_[%]
+    - ee_heat_demand_[kwh]
+    - ee_demand_[kwh]
+  ee_living:
+    ee_total: 635852000 # całkowite zużycie kWh
+    multi_area: 5317384 # powierzchnia wielorodzinna [m2]
+    single_area: 5499600 # powierzchnia jednorodzinna [m2]
+    ee_factor: 1.1 # korekta "więcej ee na m2" w wielorodzinnych
+  ee_intensity:
+    inny: 44.62207
+    biuro: 44.62207
+    handlowy: 44.62207
+    zabytek: 0.0
+    kamienica: 0.0

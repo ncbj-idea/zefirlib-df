@@ -1,0 +1,57 @@
+# KIUT (Utility Networks) Configuration
+# 'Ścieżka do pliku XML zawierającego dane TERC. Plik XML z danymi TERC można pobrać z oficjalnej strony
+# Głównego Urzędu Statystycznego (GUS) w sekcji dotyczącej TERYT, a także z portalu Open Data GUS,
+# gdzie dostępne są zbiory danych dotyczące jednostek podziału terytorialnego w Polsce.'
+# np. https://eteryt.stat.gov.pl/eTeryt/rejestr_teryt/udostepnianie_danych/baza_teryt/uzytkownicy_indywidualni/wyszukiwanie/wyszukiwanie.aspx?contrast=default
+
+# 'Path to the XML file containing TERC data. The TERC XML file can be downloaded from the official website
+# of the Central Statistical Office (GUS) in the TERYT section, as well as from the Open Data GUS portal,
+# where datasets related to territorial units in Poland are available.'
+# eg. https://eteryt.stat.gov.pl/eTeryt/rejestr_teryt/udostepnianie_danych/baza_teryt/uzytkownicy_indywidualni/wyszukiwanie/wyszukiwanie.aspx?contrast=default
+terc_urzedowy_xml_path: datafusion/resources/TERC_Urzedowy.xml
+# 'TERC number is now defined globally at the top of this config file'
+# 'Warstwy przewodów sieci pobieranych z usługi KIUT.'
+# Allowed layers:
+# przewod_wodociagowy
+# przewod_kanalizacyjny
+# przewod_cieplowniczy
+# przewod_gazowy
+# przewod_telekomunikacyjny
+# przewod_elektroenergetyczny
+# przewod_niezidentyfikowany
+# przewod_specjalny
+# 'Layers of network conduits retrieved from the KIUT service.'
+layers:
+  - przewod_gazowy
+  # 'Name of the district heating network layer available in the KIUT database.'
+  - przewod_cieplowniczy
+  # 'Name of the gas network layer available in the KIUT database.'
+polygonization:
+  # 'Próg istnienia siatki do analizy kolorów na mapie'
+  # 'Grid existence threshold for color analysis on the map'
+  grid_existence_threshold: 0.005
+  # 'Metoda używana do polygonizacji (np. ANALYZE_COLORS_ON_MAP)'
+  # 'Method used for polygonization (e.g., ANALYZE_COLORS_ON_MAP)'
+  method: ANALYZE_COLORS_ON_MAP
+  # 'Kolor tła w formacie RGBA (czerwony, zielony, niebieski, alfa)'
+  # 'Background color in RGBA format (red, green, blue, alpha)'
+  background_rgba: 0, 0, 0, 0
+wms:
+  # 'Rozmiar granicy (bounding box) w pikselach'
+  # 'Bounding box size in pixels'
+  bbox_size: 500
+  # 'Rozmiar obrazu w pikselach'
+  # 'Image size in pixels'
+  image_size: 1000
+  # 'URL do usługi WMS dla pobierania danych'
+  # 'URL to the WMS service for data retrieval'
+  url: https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaUzbrojeniaTerenu
+  # 'Wersja protokołu WMS używanego do pobierania danych'
+  # 'WMS protocol version used for data retrieval'
+  version: 1.3.0
+  # 'System odniesienia przestrzennego dla danych'
+  # 'Spatial reference system for the data'
+  srid: 2180
+# 'Liczba fragmentów na które obraz jest dzielony w celu identyfikacji'
+# 'Number of slices the image is divided into for identification'
+number_of_slices_of_image_side: 50

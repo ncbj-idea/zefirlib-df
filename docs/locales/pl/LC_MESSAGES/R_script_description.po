@@ -1,0 +1,488 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, IDEA - Narodowe Centrum Badań Jądrowych
+# This file is distributed under the same license as the PR_2024_4 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PR_2024_4 \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-13 16:02+0100\n"
+"PO-Revision-Date: 2024-11-13 16:02+0100\n"
+"Last-Translator: Your Name <your.email@example.com>\n"
+"Language: pl\n"
+"Language-Team: pl <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../R_script_description.rst:2
+msgid "R scripts description"
+msgstr "Opis skryptów R"
+
+#: ../../R_script_description.rst:4
+msgid "Value of parameters can be represented in three forms:"
+msgstr "Wartość parametrów może być reprezentowana w trzech formach:"
+
+#: ../../R_script_description.rst:6
+msgid "single numerical or integer value."
+msgstr "pojedyncza wartość numeryczna lub całkowita."
+
+#: ../../R_script_description.rst:7
+msgid "single string value - one or more quoted words."
+msgstr "pojedyncza wartość tekstowa - jedno lub więcej słów w cudzysłowie."
+
+#: ../../R_script_description.rst:8
+msgid ""
+"expression - phrase which is preceded by !expr. It tells function that "
+"expression should be evaluated as R expression (code chunk), instead "
+"simple loading variable. It allows use vectors, list (overall more "
+"complex objects) in config file."
+msgstr ""
+"wyrażenie - fraza poprzedzona przez !expr. Mówi to funkcji, że "
+"wyrażenie powinno zostać ocenione jako wyrażenie R (fragment kodu), a nie "
+"po prostu załadowana zmienna. Umożliwia to użycie wektorów, list (ogólnie "
+"bardziej złożonych obiektów) w pliku konfiguracyjnym."
+
+#: ../../R_script_description.rst:13
+msgid ""
+"Symbol “>” afted !expr comes from yml syntax and allows for line breaking"
+" for better readability."
+msgstr ""
+"Symbol „>” po !expr pochodzi z składni yml i pozwala na złamanie linii "
+"w celu lepszej czytelności."
+
+#: ../../R_script_description.rst:16
+msgid ""
+"In config file all space in data column name need be replaced by “_“. "
+"There are declared in the config file due to the possibility of changing "
+"them (external data source). The same reason is for feature values."
+msgstr ""
+"W pliku konfiguracyjnym każda spacja w nazwie kolumny danych musi być "
+"zastąpiona przez „_“. Są one zadeklarowane w pliku konfiguracyjnym z "
+"powodu możliwości ich zmiany (zewnętrzne źródło danych). To samo dotyczy "
+"wartości cech."
+
+#: ../../R_script_description.rst:21
+msgid "Parameters"
+msgstr "Parametry"
+
+#: ../../R_script_description.rst:23
+msgid "Parameters are divided in 5 categories:"
+msgstr "Parametry są podzielone na 5 kategorii:"
+
+#: ../../R_script_description.rst:25
+msgid "params - basic modification how some operation are evaluated,"
+msgstr "params - podstawowa modyfikacja, jak niektóre operacje są oceniane,"
+
+#: ../../R_script_description.rst:26
+msgid "ceeb_params - parameteres related to CEEB data,"
+msgstr "ceeb_params - parametry związane z danymi CEEB,"
+
+#: ../../R_script_description.rst:27
+msgid "bdot_params - parameters related to building data,"
+msgstr "bdot_params - parametry związane z danymi budowlanymi,"
+
+#: ../../R_script_description.rst:28
+msgid ""
+"joining_params - parameters responsible for how correction in merging "
+"CEEB and building data are made,"
+msgstr ""
+"joining_params - parametry odpowiedzialne za sposób, w jaki dokonuje się "
+"korekcja w łączeniu danych CEEB i budowlanych,"
+
+#: ../../R_script_description.rst:30
+msgid "default - don’t change, technical requirement of config library."
+msgstr "default - nie zmieniać, wymóg techniczny biblioteki konfiguracyjnej."
+
+#: ../../R_script_description.rst:42
+msgid ""
+"**h3_resolution** - integer parameter related to resolution of hexagons "
+"(h3 method) and it is used in multi-criteria decision. It needs to be a "
+"number between 5 and 10, where 10 should be used in small JST and 5 in "
+"big cities or similar area. Other values will cause error."
+msgstr ""
+"**h3_resolution** - parametr całkowity związany z rozdzielczością heksagonów "
+"(metoda h3) i wykorzystywany w decyzji wielokryterialnej. Musi to być liczba "
+"pomiędzy 5 a 10, gdzie 10 należy używać w małych JST, a 5 w dużych miastach lub "
+"podobnych obszarach. Inne wartości spowodują błąd."
+
+#: ../../R_script_description.rst:45
+msgid ""
+"**gini_in_topsis** - logical parameter responsible for using gini in "
+"multi-criteria-decision. It should be FALSE now, because gini "
+"incorporation require automated evaluation in non-continuous results."
+msgstr ""
+"**gini_in_topsis** - parametr logiczny odpowiedzialny za wykorzystanie gini "
+"w decyzji wielokryterialnej. Powinno być ustawione na FALSE, ponieważ "
+"wdrożenie gini wymaga automatycznej oceny w wynikach nieciągłych."
+
+#: ../../R_script_description.rst:47
+msgid ""
+"**gini_lorenz** - logical parameter. Should lorenze curve used in "
+"calculation of gini index."
+msgstr ""
+"**gini_lorenz** - parametr logiczny. Czy krzywa Lorenza powinna być używana "
+"w obliczaniu indeksu Giniego."
+
+#: ../../R_script_description.rst:49
+msgid ""
+"**gini_method** - string parameter. Method of gini calculation, allowed "
+"values: trapz or aprox."
+msgstr ""
+"**gini_method** - parametr tekstowy. Metoda obliczania Giniego, dozwolone "
+"wartości: trapz lub aprox."
+
+#: ../../R_script_description.rst:53
+msgid ""
+"**classification_method** - string parameter. Which method should be used"
+" in multi-criteria decision. Allowed values: average, volatility, "
+"distance and topsis. Default is topsis, it usually has the best results."
+msgstr ""
+"**classification_method** - parametr tekstowy. Jaką metodę należy zastosować "
+"w decyzji wielokryterialnej. Dozwolone wartości: average, volatility, "
+"distance i topsis. Domyślnie topsis, zwykle daje najlepsze wyniki."
+
+#: ../../R_script_description.rst:56
+msgid ""
+"**coord_system** - string parameter, default EPSG:2180. Coordinated "
+"system is used in config file for elasticity reason, if some building "
+"data come from different system."
+msgstr ""
+"**coord_system** - parametr tekstowy, domyślnie EPSG:2180. System współrzędnych "
+"jest używany w pliku konfiguracyjnym z powodu elastyczności, jeśli dane budowlane "
+"pochodzą z innego systemu."
+
+#: ../../R_script_description.rst:58
+msgid ""
+"**complex_distance** - numerical parameter. Responsible for maximum "
+"distance in non living building shapes merging."
+msgstr ""
+"**complex_distance** - parametr numeryczny. Odpowiada za maksymalną "
+"odległość przy łączeniu kształtów budynków nienażywających do mieszkalnych."
+
+#: ../../R_script_description.rst:62
+msgid ""
+"**string_max_distance** - numerical parameter between 0 and 1. Threshold "
+"in string dissimilarity, lower value cause more strict joining, greater "
+"more loose. In method cosine with parameter value 1, the best results so "
+"far is with string_max_distance equal 0.1."
+msgstr ""
+"**string_max_distance** - parametr numeryczny pomiędzy 0 a 1. Próg "
+"niepodobieństwa ciągów, mniejsza wartość powoduje bardziej restrykcyjne łączenie, "
+"większa powoduje luźniejsze. W metodzie cosine przy wartości parametru 1, "
+"najlepsze wyniki osiągnięto przy string_max_distance równej 0.1."
+
+#: ../../R_script_description.rst:65
+msgid ""
+"**string_param** - numerical parameter. Parameters used string "
+"dissimilarity methods. If string_method is ‘jw’ than allowed values are "
+"0-0.25 otherwise integer between 1-5."
+msgstr ""
+"**string_param** - parametr numeryczny. Parametry używane w metodach "
+"niepodobieństwa ciągów. Jeśli string_method to 'jw', dozwolone wartości to "
+"0-0.25, w przeciwnym razie liczba całkowita pomiędzy 1-5."
+
+#: ../../R_script_description.rst:69
+msgid ""
+"**string_method** - string parameter. Which method should be used in "
+"string dissimilarity methods. Allowed values: “osa”, “lv”, “dl”, "
+"“hamming”, “lcs”, “qgram”, “cosine”, “jaccard”, “jw”,“soundex”. Default "
+"cosine (best results)."
+msgstr ""
+"**string_method** - parametr tekstowy. Jaką metodę należy zastosować w "
+"metodach niepodobieństwa ciągów. Dozwolone wartości: „osa”, „lv”, „dl”, "
+"„hamming”, „lcs”, „qgram”, „cosine”, „jaccard”, „jw”, „soundex”. Domyślnie "
+"cosine (najlepsze wyniki)."
+
+#: ../../R_script_description.rst:73
+msgid ""
+"**heat_threshold** - numerical parameter in multi-criteria-decision. "
+"Describe which hexagon should treated as connected to heat. Allowed "
+"values are 0.25-0.75. Lower value less strict requirement for positive "
+"heat connectivity. Default is 0.5."
+msgstr ""
+"**heat_threshold** - parametr numeryczny w decyzji wielokryterialnej. "
+"Opisuje, który heksagon powinien być traktowany jako połączony z ciepłem. "
+"Dozwolone wartości to 0.25-0.75. Niższa wartość oznacza mniej restrykcyjne "
+"wymaganie dla pozytywnej łączności z ciepłem. Domyślnie 0.5."
+
+#: ../../R_script_description.rst:76
+msgid ""
+"**heat_development** - string parameter. Which method should be used in "
+"future of heat development. Allowed values are: “h3”, “none”,“distance”."
+msgstr ""
+"**heat_development** - parametr tekstowy. Jaką metodę należy zastosować w "
+"przyszłości rozwoju ciepła. Dozwolone wartości to: „h3”, „none”, „distance”."
+
+#: ../../R_script_description.rst:78
+msgid ""
+"**expanded_logs** - logical values Should be printed more logs. Default "
+"is true."
+msgstr ""
+"**expanded_logs** - wartość logiczna. Czy należy drukować więcej logów. Domyślnie "
+"jest to true."
+
+#: ../../R_script_description.rst:87
+msgid ""
+"**ceeb_merger** - expression, which columns should be used in merging "
+"ceeb reports."
+msgstr ""
+"**ceeb_merger** - wyrażenie, które kolumny powinny być używane w łączeniu "
+"raportów CEEB."
+
+#: ../../R_script_description.rst:89
+msgid ""
+"**ceeb_boiler** - expression, which feature values should be present in "
+"*ceeb_device_col* to merge CEEB reports."
+msgstr ""
+"**ceeb_boiler** - wyrażenie, które wartości cech powinny być obecne w "
+"*ceeb_device_col*, aby połączyć raporty CEEB."
+
+#: ../../R_script_description.rst:91
+msgid ""
+"**ceeb_summary** - expression, which columns are not allowed to have "
+"missing value (discard records with missing value)."
+msgstr ""
+"**ceeb_summary** - wyrażenie, które kolumny nie mogą zawierać brakujących "
+"wartości (odrzucanie rekordów z brakującymi danymi)."
+
+#: ../../R_script_description.rst:93
+msgid ""
+"**ceeb_living** - expression, feature values in *ceeb_declare_col* which "
+"points to the declaration regarding residential buildings."
+msgstr ""
+"**ceeb_living** - wyrażenie, wartości cech w *ceeb_declare_col*, które "
+"odnoszą się do deklaracji dotyczącej budynków mieszkalnych."
+
+#: ../../R_script_description.rst:94
+msgid "**ceeb_non_living** - as above, but non residential buildings."
+msgstr "**ceeb_non_living** - jak wyżej, ale dotyczące budynków niemieszkalnych."
+
+#: ../../R_script_description.rst:96
+msgid ""
+"**ceeb_diverge** - string, column name, technical correction in naming "
+"between ceeb reports."
+msgstr ""
+"**ceeb_diverge** - parametr tekstowy, nazwa kolumny, poprawka techniczna w "
+"nazewnictwie między raportami CEEB."
+
+#: ../../R_script_description.rst:97
+msgid "**ceeb_device_col** - string, column name, refers to declared device."
+msgstr ""
+"**ceeb_device_col** - parametr tekstowy, nazwa kolumny, odnosi się do zadeklarowanego urządzenia."
+
+#: ../../R_script_description.rst:98
+msgid "**ceeb_street_col** - string, column name, refers to street name’s."
+msgstr ""
+"**ceeb_street_col** - parametr tekstowy, nazwa kolumny, odnosi się do nazw ulic."
+
+#: ../../R_script_description.rst:99
+msgid "**ceeb_number_col** - string, column name, refers to address number’s."
+msgstr ""
+"**ceeb_number_col** - parametr tekstowy, nazwa kolumny, odnosi się do numerów adresów."
+
+#: ../../R_script_description.rst:100
+msgid "**ceeb_class_col** - string, column name, refers to class of device."
+msgstr ""
+"**ceeb_class_col** - parametr tekstowy, nazwa kolumny, odnosi się do klasy urządzenia."
+
+#: ../../R_script_description.rst:102
+msgid ""
+"**ceeb_declare_col** - string, column name, refers to declaration type "
+"(living/nonliving)."
+msgstr ""
+"**ceeb_declare_col** - parametr tekstowy, nazwa kolumny, odnosi się do typu deklaracji "
+"(mieszkalne/niemieszkalne)."
+
+#: ../../R_script_description.rst:104
+msgid "**ceeb_eksp_col** - string, column name, refers to number of used devices."
+msgstr ""
+"**ceeb_eksp_col** - parametr tekstowy, nazwa kolumny, odnosi się do liczby używanych urządzeń."
+
+#: ../../R_script_description.rst:106
+msgid ""
+"**ceeb_nmb_col** - string, column name, refers to number of installed "
+"devices."
+msgstr ""
+"**ceeb_nmb_col** - parametr tekstowy, nazwa kolumny, odnosi się do liczby zainstalowanych urządzeń."
+
+#: ../../R_script_description.rst:107
+msgid "**ceeb_lokal_col** - string, column name, refers to apartment number."
+msgstr ""
+"**ceeb_lokal_col** - parametr tekstowy, nazwa kolumny, odnosi się do numeru mieszkania."
+
+#: ../../R_script_description.rst:115
+msgid "**bdot_street_col** - string, column name, refers to street name’s."
+msgstr ""
+"**bdot_street_col** - parametr tekstowy, nazwa kolumny, odnosi się do nazw ulic."
+
+#: ../../R_script_description.rst:116
+msgid "**bdot_number_col** - string, column name, refers to address number’s."
+msgstr ""
+"**bdot_number_col** - parametr tekstowy, nazwa kolumny, odnosi się do numerów adresów."
+
+#: ../../R_script_description.rst:117
+msgid "**bdot_geom_var** - string, column name, refers to geometry."
+msgstr ""
+"**bdot_geom_var** - parametr tekstowy, nazwa kolumny, odnosi się do geometrii."
+
+#: ../../R_script_description.rst:123
+msgid ""
+"**bdot_binary_var** - expresion, column names, in merging shapes, on "
+"which columns should be used logical function *any*./ **bdot_sum_var** - "
+"expresion, column names, in merging shapes, on which columns should be "
+"used summarise function *sum*./ **bdot_addr_var** - expresion, column "
+"names, in merging shapes, on which columns should be take values form "
+"address building."
+msgstr ""
+"**bdot_binary_var** - wyrażenie, nazwy kolumn, w łączeniu kształtów, na "
+"których kolumnach powinna być użyta funkcja logiczna *any*./ **bdot_sum_var** - "
+"wyrażenie, nazwy kolumn, w łączeniu kształtów, na których kolumnach powinna być "
+"użyta funkcja sumująca *sum*./ **bdot_addr_var** - wyrażenie, nazwy "
+"kolumn, w łączeniu kształtów, na których kolumnach powinny być pobierane wartości "
+"z adresu budynku."
+
+#: ../../R_script_description.rst:125
+msgid ""
+"**bdot_addr_distance** - string, column name, refers to distance to "
+"address point."
+msgstr ""
+"**bdot_addr_distance** - parametr tekstowy, nazwa kolumny, odnosi się do odległości do "
+"punktu adresowego."
+
+#: ../../R_script_description.rst:126
+msgid "**bdot_id** - string, column name, refers to id."
+msgstr "**bdot_id** - parametr tekstowy, nazwa kolumny, odnosi się do identyfikatora."
+
+#: ../../R_script_description.rst:129
+msgid ""
+"**bdot_merge_var** - string, column name, refers to building type (that "
+"with lower number of category). It is used in merging shapes procedure "
+"and merge correction."
+msgstr ""
+"**bdot_merge_var** - parametr tekstowy, nazwa kolumny, odnosi się do typu budynku "
+"(tego z niższym numerem kategorii). Używane w procedurze łączenia kształtów "
+"oraz korekcji scalania."
+
+#: ../../R_script_description.rst:131
+msgid ""
+"**bdot_col_output** - expresion, column names, tells which columns should"
+" be keep after some operations."
+msgstr ""
+"**bdot_col_output** - wyrażenie, nazwy kolumn, wskazujące, które kolumny "
+"powinny być zachowane po wykonaniu operacji."
+
+#: ../../R_script_description.rst:133
+msgid ""
+"**h3_excluded_type** - expresion, feature values, which building type in "
+"*bdot_detail* should be excluded from multi-criteria-decion."
+msgstr ""
+"**h3_excluded_type** - wyrażenie, wartości cech, które typy budynków w "
+"*bdot_detail* powinny zostać wykluczone z wielokryterialnej decyzji."
+
+#: ../../R_script_description.rst:134
+msgid "**bdot_floors** - string, column name, refers to number of floors."
+msgstr "**bdot_floors** - parametr tekstowy, nazwa kolumny, odnosi się do liczby pięter."
+
+#: ../../R_script_description.rst:136
+msgid "**bdot_pow_uzytkow** - string, column name, refers to area of building."
+msgstr "**bdot_pow_uzytkow** - parametr tekstowy, nazwa kolumny, odnosi się do powierzchni budynku."
+
+#: ../../R_script_description.rst:137
+msgid "**bdot_obrys** - string, column name, refers to area of shape."
+msgstr "**bdot_obrys** - parametr tekstowy, nazwa kolumny, odnosi się do obszaru kształtu."
+
+#: ../../R_script_description.rst:140
+msgid ""
+"**bdot_detail** - string, column name, refers to building type (that with"
+" greater number of category). It is used in multi-criteria-decision and "
+"exluding unheated buildings."
+msgstr ""
+"**bdot_detail** - parametr tekstowy, nazwa kolumny, odnosi się do typu budynku "
+"(tego z wyższym numerem kategorii). Używane w wielokryterialnej decyzji oraz "
+"wykluczaniu budynków nieogrzewanych."
+
+#: ../../R_script_description.rst:142
+msgid ""
+"**bdot_heat** - string, column name, refers to heat connectivity based on"
+" distance."
+msgstr ""
+"**bdot_heat** - parametr tekstowy, nazwa kolumny, odnosi się do łączności cieplnej na podstawie "
+"odległości."
+
+#: ../../R_script_description.rst:144
+msgid ""
+"**heat_distance** - string, column name, refers to hdistance from heat "
+"network."
+msgstr ""
+"**heat_distance** - parametr tekstowy, nazwa kolumny, odnosi się do odległości do sieci ciepłowniczej."
+
+#: ../../R_script_description.rst:146
+msgid ""
+"**non_inventory_build** - expresion, feature values, which building type "
+"in *bdot_detail* should be treated as unheated."
+msgstr ""
+"**non_inventory_build** - wyrażenie, wartości cech, które typy budynków w "
+"*bdot_detail* powinny być traktowane jako nieogrzewane."
+
+#: ../../R_script_description.rst:148
+msgid ""
+"**living_bdot** - expresion, column names, which records should be "
+"treated as residential building, based on value in *bdot_merge_var*."
+msgstr ""
+"**living_bdot** - wyrażenie, nazwy kolumn, które rekordy powinny być "
+"traktowane jako budynki mieszkalne, na podstawie wartości w *bdot_merge_var*."
+
+#: ../../R_script_description.rst:157
+msgid "**var_ceeb** - string, column name, refer to type of residential building."
+msgstr "**var_ceeb** - parametr tekstowy, nazwa kolumny, odnosi się do typu budynku mieszkalnego."
+
+#: ../../R_script_description.rst:158
+msgid "**ceeb_single** - string, feature value, refer to single family house."
+msgstr "**ceeb_single** - parametr tekstowy, wartość cechy, odnosi się do domu jednorodzinnego."
+
+#: ../../R_script_description.rst:159
+msgid "**ceeb_multi** - string, feature value, refer to multi family house."
+msgstr "**ceeb_multi** - parametr tekstowy, wartość cechy, odnosi się do domu wielorodzinnego."
+
+#: ../../R_script_description.rst:161
+msgid ""
+"**ceeb_other** - string, feature value, refer to collective housing "
+"buildings."
+msgstr ""
+"**ceeb_other** - parametr tekstowy, wartość cechy, odnosi się do budynków mieszkalnych zbiorowych."
+
+#: ../../R_script_description.rst:164
+msgid ""
+"**single_order** - expression, order of single family correction in "
+"merging ceeb and building data. Those values are from building data "
+"(*bdot_merge_var*)."
+msgstr ""
+"**single_order** - wyrażenie, kolejność korekcji dla domów jednorodzinnych w "
+"łączeniu danych CEEB i danych budowlanych. Wartości te pochodzą z danych budowlanych "
+"(*bdot_merge_var*)."
+
+#: ../../R_script_description.rst:165
+msgid "**multi_order** - as above, but for multi family residential."
+msgstr "**multi_order** - jak wyżej, ale dla budynków mieszkalnych wielorodzinnych."
+
+#: ../../R_script_description.rst:166
+msgid "**other_order** - as above, but for collective housing buildings."
+msgstr "**other_order** - jak wyżej, ale dla budynków mieszkalnych zbiorowych."
+
+#: ../../R_script_description.rst:170
+msgid ""
+"**nonliving_order** - as above, but for non residential building. "
+"Important: reverse order. It is used in separate function, iteratively "
+"not merge with contained building types. In each iteration is removed "
+"first position of vector."
+msgstr ""
+"**nonliving_order** - jak wyżej, ale dla budynków niemieszkalnych. "
+"Ważne: odwrotna kolejność. Jest używane w oddzielnej funkcji, iteracyjnie, "
+"nie łączy się z zawartymi typami budynków. W każdej iteracji usuwana jest "
+"pierwsza pozycja wektora."

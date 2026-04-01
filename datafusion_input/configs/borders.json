@@ -1,0 +1,8 @@
+{
+  "url": "https://mapy.geoportal.gov.pl/wss/service/PZGIK/PRG/WFS/AdministrativeBoundaries",
+  "layer_name": "A05_Granice_jednostek_ewidencyjnych",
+  "tmp_table_name": "tmp_administative_boundaries",
+  "wfs_version": "1.1.0",
+  "timeout": 600,
+  "tmp_table_schema": "tmp"
+}

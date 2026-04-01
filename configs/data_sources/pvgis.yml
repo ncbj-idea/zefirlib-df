@@ -1,0 +1,30 @@
+# PVGIS (Solar Data) Configuration
+# Szerokość geograficzna, w stopniach dziesiętnych, południe jest ujemne.
+# Latitude, in decimal degrees, south is negative.
+lat: 54.577803833671275
+# Długość geograficzna, w stopniach dziesiętnych, zachód jest ujemny.
+# Longitude, in decimal degrees, west is negative.
+lon: 16.853082386620372
+# Nominalna moc systemu PV, w kW.
+# Nominal power of the PV system, in kW.
+peakpower: 1.
+# Suma strat systemowych, w procentach. Szacowane straty systemowe to wszystkie straty w systemie, które powodują,
+# że moc faktycznie dostarczana do sieci elektrycznej jest mniejsza niż moc produkowana przez moduły PV.
+# Sum of system losses, in percent. The estimated system losses are all the losses in the system, which cause
+# the power actually delivered to the electricity grid to be lower than the power produced by the PV modules.
+loss: 14
+# Pierwszy rok wyjścia średnich godzinowych.
+# First year of the output of hourly averages.
+startyear: 2023
+# Ostatni rok wyjścia średnich godzinowych.
+# Final year of the output of hourly averages.
+endyear: 2023
+#promień w którego zasięgu będą szukane dane
+# Radius within which data will be searched.
+radius: 500.
+# 'Schemat bazy danych dla tymczasowych tabel punktów adresowych'
+# 'Database schema for temporary address points tables'
+tmp_table_schema: tmp
+# 'Ścieżka do miejsca, gdzie raport zostanie zapisany'
+# 'Path to the location where the report will be saved'
+output_path: Path

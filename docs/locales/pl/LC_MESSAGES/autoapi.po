@@ -1,0 +1,3048 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, IDEA - Narodowe Centrum Badań Jądrowych
+# This file is distributed under the same license as the PR_2024_4 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PR_2024_4 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-18 14:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pl\n"
+"Language-Team: pl <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../autoapi/data_merger/index.rst:2
+msgid "data_merger"
+msgstr ""
+
+#: ../../autoapi/data_merger/index.rst:10
+#: ../../autoapi/datafusion/airflow/dags/address_dag/index.rst:12
+#: ../../autoapi/datafusion/airflow/dags/bdot_dag/index.rst:12
+#: ../../autoapi/datafusion/airflow/dags/borders_dag/index.rst:12
+#: ../../autoapi/datafusion/airflow/dags/ceeb_dag/index.rst:12
+#: ../../autoapi/datafusion/airflow/dags/kiut_dag/index.rst:12
+#: ../../autoapi/datafusion/airflow/dags/main_dag/index.rst:10
+#: ../../autoapi/datafusion/airflow/dags/pvgis_dag/index.rst:12
+#: ../../autoapi/datafusion/airflow/dags/report_dag/index.rst:12
+#: ../../autoapi/datafusion/airflow/dags/utils/index.rst:12
+#: ../../autoapi/datafusion/configs/address_config/index.rst:10
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:10
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:10
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:10
+#: ../../autoapi/datafusion/configs/config/index.rst:12
+#: ../../autoapi/datafusion/configs/default_paths/index.rst:10
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:12
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:10
+#: ../../autoapi/datafusion/configs/report_config/index.rst:10
+#: ../../autoapi/datafusion/constants/index.rst:10
+#: ../../autoapi/datafusion/database/db_settings/index.rst:12
+#: ../../autoapi/datafusion/database/initialize/index.rst:12
+#: ../../autoapi/datafusion/database/models/address_point/index.rst:10
+#: ../../autoapi/datafusion/database/models/administrative_boundary/index.rst:10
+#: ../../autoapi/datafusion/database/models/base_class/index.rst:12
+#: ../../autoapi/datafusion/database/models/bdot/index.rst:10
+#: ../../autoapi/datafusion/database/models/import_metadata/index.rst:10
+#: ../../autoapi/datafusion/database/models/kiut_layer/index.rst:10
+#: ../../autoapi/datafusion/database/models/map/index.rst:10
+#: ../../autoapi/datafusion/database/models/mapping_import_to_terc/index.rst:10
+#: ../../autoapi/datafusion/database/models/pvgis/index.rst:10
+#: ../../autoapi/datafusion/database/models/terc/index.rst:10
+#: ../../autoapi/datafusion/database/models/tile/index.rst:10
+#: ../../autoapi/datafusion/database/session/index.rst:12
+#: ../../autoapi/datafusion/jsons/bdot_mapper/index.rst:10
+#: ../../autoapi/datafusion/kiut/array_slicer/index.rst:12
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:10
+#: ../../autoapi/datafusion/kiut/import_maps/index.rst:12
+#: ../../autoapi/datafusion/kiut/import_tiles/index.rst:12
+#: ../../autoapi/datafusion/kiut/layers/index.rst:12
+#: ../../autoapi/datafusion/kiut/map_analyze/factory/index.rst:12
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_colors/index.rst:14
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_not_blank_pixels/index.rst:12
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/interface/index.rst:12
+#: ../../autoapi/datafusion/prg/address_points_procedures/index.rst:10
+#: ../../autoapi/datafusion/readers/address_reader/index.rst:10
+#: ../../autoapi/datafusion/readers/base_reader/index.rst:10
+#: ../../autoapi/datafusion/readers/bdot_reader/index.rst:10
+#: ../../autoapi/datafusion/readers/borders_reader/index.rst:10
+#: ../../autoapi/datafusion/readers/ceeb_reader/index.rst:10
+#: ../../autoapi/datafusion/readers/kiut_reader/index.rst:12
+#: ../../autoapi/datafusion/readers/pvgis_reader/index.rst:12
+#: ../../autoapi/datafusion/reporting/constants/index.rst:10
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:12
+#: ../../autoapi/datafusion/reporting/utils/index.rst:10
+#: ../../autoapi/datafusion/runners/address_runner/index.rst:12
+#: ../../autoapi/datafusion/runners/bdot_runner/index.rst:12
+#: ../../autoapi/datafusion/runners/borders_runner/index.rst:12
+#: ../../autoapi/datafusion/runners/ceeb_runner/index.rst:12
+#: ../../autoapi/datafusion/runners/kiut_runner/index.rst:12
+#: ../../autoapi/datafusion/runners/pvgis_merger_runner/index.rst:10
+#: ../../autoapi/datafusion/runners/pvgis_runner/index.rst:12
+#: ../../autoapi/datafusion/runners/report_runner/index.rst:10
+#: ../../autoapi/datafusion/runners/runner/index.rst:12
+#: ../../autoapi/datafusion/teryt_codes/teryt_codes/index.rst:10
+#: ../../autoapi/datafusion/utils/crud/index.rst:10
+#: ../../autoapi/datafusion/utils/image/color/index.rst:12
+#: ../../autoapi/datafusion/utils/image/distance/index.rst:10
+#: ../../autoapi/datafusion/utils/image/normalization/index.rst:10
+#: ../../autoapi/datafusion/utils/image/serialize/index.rst:10
+#: ../../autoapi/datafusion/utils/ogr/index.rst:10
+#: ../../autoapi/datafusion/utils/remote/index.rst:10
+#: ../../autoapi/datafusion/utils/setup_logging/index.rst:10
+#: ../../autoapi/datafusion/utils/sql/index.rst:10
+#: ../../autoapi/datafusion/utils/typings/index.rst:10
+#: ../../autoapi/datafusion/utils/utils/index.rst:12
+#: ../../autoapi/datafusion/utils/wms/index.rst:12
+msgid "Module Contents"
+msgstr "Zawartość modułu"
+
+#: ../../autoapi/datafusion/airflow/dags/address_dag/index.rst:2
+msgid "datafusion.airflow.dags.address_dag"
+msgstr ""
+
+#: ../../autoapi/datafusion/airflow/dags/bdot_dag/index.rst:2
+msgid "datafusion.airflow.dags.bdot_dag"
+msgstr ""
+
+#: ../../autoapi/datafusion/airflow/dags/borders_dag/index.rst:2
+msgid "datafusion.airflow.dags.borders_dag"
+msgstr ""
+
+#: ../../autoapi/datafusion/airflow/dags/ceeb_dag/index.rst:2
+msgid "datafusion.airflow.dags.ceeb_dag"
+msgstr ""
+
+#: ../../autoapi/datafusion/airflow/dags/index.rst:2
+msgid "datafusion.airflow.dags"
+msgstr ""
+
+#: ../../autoapi/datafusion/airflow/dags/index.rst:8
+#: ../../autoapi/datafusion/airflow/index.rst:8
+#: ../../autoapi/datafusion/configs/index.rst:8
+#: ../../autoapi/datafusion/database/index.rst:8
+#: ../../autoapi/datafusion/database/models/index.rst:8
+#: ../../autoapi/datafusion/index.rst:8
+#: ../../autoapi/datafusion/jsons/index.rst:8
+#: ../../autoapi/datafusion/kiut/index.rst:8
+#: ../../autoapi/datafusion/kiut/map_analyze/index.rst:8
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/index.rst:8
+#: ../../autoapi/datafusion/prg/index.rst:8
+#: ../../autoapi/datafusion/readers/index.rst:8
+#: ../../autoapi/datafusion/reporting/index.rst:8
+#: ../../autoapi/datafusion/runners/index.rst:8
+#: ../../autoapi/datafusion/teryt_codes/index.rst:8
+#: ../../autoapi/datafusion/utils/image/index.rst:8
+#: ../../autoapi/datafusion/utils/index.rst:8
+msgid "Submodules"
+msgstr "Podmoduły"
+
+#: ../../autoapi/datafusion/airflow/dags/kiut_dag/index.rst:2
+msgid "datafusion.airflow.dags.kiut_dag"
+msgstr ""
+
+#: ../../autoapi/datafusion/airflow/dags/main_dag/index.rst:2
+msgid "datafusion.airflow.dags.main_dag"
+msgstr ""
+
+#: ../../autoapi/datafusion/airflow/dags/pvgis_dag/index.rst:2
+msgid "datafusion.airflow.dags.pvgis_dag"
+msgstr ""
+
+#: ../../autoapi/datafusion/airflow/dags/report_dag/index.rst:2
+msgid "datafusion.airflow.dags.report_dag"
+msgstr ""
+
+#: ../../autoapi/datafusion/airflow/dags/utils/index.rst:2
+msgid "datafusion.airflow.dags.utils"
+msgstr ""
+
+#: ../../autoapi/datafusion/airflow/index.rst:2
+msgid "datafusion.airflow"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/address_config/index.rst:2
+msgid "datafusion.configs.address_config"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/address_config/index.rst:16
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:16
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:16
+#: ../../autoapi/datafusion/configs/config/index.rst:25
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:39
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:84
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:121
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:164
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:228
+#: ../../autoapi/datafusion/configs/report_config/index.rst:16
+msgid "Usage docs: https://docs.pydantic.dev/2.8/concepts/models/"
+msgstr "Dokumentacja użycia: https://docs.pydantic.dev/2.8/concepts/models/"
+
+#: ../../autoapi/datafusion/configs/address_config/index.rst:18
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:18
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:18
+#: ../../autoapi/datafusion/configs/config/index.rst:27
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:41
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:86
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:123
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:166
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:230
+#: ../../autoapi/datafusion/configs/report_config/index.rst:18
+msgid "A base class for creating Pydantic models."
+msgstr "Bazowa klasa do tworzenia modeli Pydantic."
+
+#: ../../autoapi/datafusion/configs/address_config/index.rst:20
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:20
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:20
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:18
+#: ../../autoapi/datafusion/configs/config/index.rst:29
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:43
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:88
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:125
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:168
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:232
+#: ../../autoapi/datafusion/configs/report_config/index.rst:20
+msgid "Attributes:"
+msgstr "Atrybuty:"
+
+#: ../../autoapi/datafusion/configs/address_config/index.rst:21
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:21
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:21
+#: ../../autoapi/datafusion/configs/config/index.rst:30
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:44
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:89
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:126
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:169
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:233
+#: ../../autoapi/datafusion/configs/report_config/index.rst:21
+msgid ""
+"__class_vars__: The names of classvars defined on the model. "
+"__private_attributes__: Metadata about the private attributes of the "
+"model. __signature__: The signature for instantiating the model."
+msgstr ""
+"__class_vars__: Nazwy classvars zdefiniowanych w modelu. "
+"__private_attributes__: Metadane dotyczące prywatnych atrybutów modelu. "
+"__signature__: Sygnatura do instancjonowania modelu."
+
+#: ../../autoapi/datafusion/configs/address_config/index.rst:25
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:25
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:25
+#: ../../autoapi/datafusion/configs/config/index.rst:34
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:48
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:93
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:130
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:173
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:237
+#: ../../autoapi/datafusion/configs/report_config/index.rst:25
+msgid ""
+"__pydantic_complete__: Whether model building is completed, or if there "
+"are still undefined fields. __pydantic_core_schema__: The pydantic-core "
+"schema used to build the SchemaValidator and SchemaSerializer. "
+"__pydantic_custom_init__: Whether the model has a custom `__init__` "
+"function. __pydantic_decorators__: Metadata containing the decorators "
+"defined on the model."
+msgstr ""
+"__pydantic_complete__: Czy budowanie modelu jest zakończone, czy są "
+"jeszcze niezdefiniowane pola. __pydantic_core_schema__: Schemat pydantic-"
+"core używany do budowy SchemaValidator i SchemaSerializer. "
+"__pydantic_custom_init__: Czy model ma niestandardową funkcję `__init__`."
+" __pydantic_decorators__: Metadane zawierające dekoratory zdefiniowane na"
+" modelu."
+
+#: ../../autoapi/datafusion/configs/address_config/index.rst:29
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:29
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:29
+#: ../../autoapi/datafusion/configs/config/index.rst:38
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:52
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:97
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:134
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:177
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:241
+#: ../../autoapi/datafusion/configs/report_config/index.rst:29
+msgid ""
+"This replaces `Model.__validators__` and `Model.__root_validators__` from"
+" Pydantic V1."
+msgstr ""
+"To zastępuje `Model.__validators__` i `Model.__root_validators__` z "
+"Pydantic V1."
+
+#: ../../autoapi/datafusion/configs/address_config/index.rst:30
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:30
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:30
+#: ../../autoapi/datafusion/configs/config/index.rst:39
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:53
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:98
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:135
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:178
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:242
+#: ../../autoapi/datafusion/configs/report_config/index.rst:30
+msgid ""
+"__pydantic_generic_metadata__: Metadata for generic models; contains data"
+" used for a similar purpose to"
+msgstr ""
+"__pydantic_generic_metadata__: Metadane dla modeli generycznych; zawiera "
+"dane używane do podobnego celu jak"
+
+#: ../../autoapi/datafusion/configs/address_config/index.rst:31
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:31
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:31
+#: ../../autoapi/datafusion/configs/config/index.rst:40
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:54
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:99
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:136
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:179
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:243
+#: ../../autoapi/datafusion/configs/report_config/index.rst:31
+msgid ""
+"__args__, __origin__, __parameters__ in typing-module generics. May "
+"eventually be replaced by these."
+msgstr ""
+"__args__, __origin__, __parameters__ w generykach modułu typing. Mogą "
+"zostać ostatecznie zastąpione przez te."
+
+#: ../../autoapi/datafusion/configs/address_config/index.rst:32
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:32
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:32
+#: ../../autoapi/datafusion/configs/config/index.rst:41
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:55
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:100
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:137
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:180
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:244
+#: ../../autoapi/datafusion/configs/report_config/index.rst:32
+msgid ""
+"__pydantic_parent_namespace__: Parent namespace of the model, used for "
+"automatic rebuilding of models. __pydantic_post_init__: The name of the "
+"post-init method for the model, if defined. __pydantic_root_model__: "
+"Whether the model is a `RootModel`. __pydantic_serializer__: The "
+"pydantic-core SchemaSerializer used to dump instances of the model. "
+"__pydantic_validator__: The pydantic-core SchemaValidator used to "
+"validate instances of the model."
+msgstr ""
+"__pydantic_parent_namespace__: Rodzaj nadrzędny modelu, używany do "
+"automatycznego odbudowywania modeli. __pydantic_post_init__: Nazwa metody"
+" post-inicjalizacyjnej modelu, jeśli jest zdefiniowana. "
+"__pydantic_root_model__: Czy model jest `RootModel`. "
+"__pydantic_serializer__: Serializer Schema pydantic-core używany do "
+"zapisywania instancji modelu. __pydantic_validator__: Walidator Schema "
+"pydantic-core używany do walidacji instancji modelu."
+
+#: ../../autoapi/datafusion/configs/address_config/index.rst:38
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:38
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:38
+#: ../../autoapi/datafusion/configs/config/index.rst:47
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:61
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:106
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:143
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:186
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:250
+#: ../../autoapi/datafusion/configs/report_config/index.rst:38
+msgid ""
+"__pydantic_extra__: An instance attribute with the values of extra fields"
+" from validation when"
+msgstr ""
+"__pydantic_extra__: Atrybut instancji z wartościami dodatkowych pól z "
+"walidacji, gdy"
+
+#: ../../autoapi/datafusion/configs/address_config/index.rst:39
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:39
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:39
+#: ../../autoapi/datafusion/configs/config/index.rst:48
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:62
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:107
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:144
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:187
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:251
+#: ../../autoapi/datafusion/configs/report_config/index.rst:39
+msgid "`model_config['extra'] == 'allow'`."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/address_config/index.rst:40
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:40
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:40
+#: ../../autoapi/datafusion/configs/config/index.rst:49
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:63
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:108
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:145
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:188
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:252
+#: ../../autoapi/datafusion/configs/report_config/index.rst:40
+msgid ""
+"__pydantic_fields_set__: An instance attribute with the names of fields "
+"explicitly set. __pydantic_private__: Instance attribute with the values "
+"of private attributes set on the model instance."
+msgstr ""
+"__pydantic_fields_set__: Atrybut instancji z nazwami pól ustawionymi "
+"jawnie. __pydantic_private__: Atrybut instancji z wartościami prywatnych "
+"atrybutów ustawionych na instancji modelu."
+
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:2
+msgid "datafusion.configs.bdot_config"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/bdot_config/index.rst:84
+msgid ""
+"Override this method to perform additional initialization after "
+"`__init__` and `model_construct`. This is useful if you want to do some "
+"validation that requires the entire model to be initialized."
+msgstr ""
+"Przesłoń tę metodę, aby wykonać dodatkową inicjalizację po `__init__` i "
+"`model_construct`. Jest to przydatne, jeśli chcesz przeprowadzić jakąś "
+"walidację, która wymaga, aby cały model był zainicjalizowany."
+
+#: ../../autoapi/datafusion/configs/borders_config/index.rst:2
+msgid "datafusion.configs.borders_config"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:2
+msgid "datafusion.configs.ceeb_config"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:16
+msgid "Configuration model for CEEB application file paths and schema."
+msgstr "Model konfiguracyjny dla ścieżek plików aplikacji CEEB i schematu."
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:19
+msgid ""
+"terc (str): Terc code used in import statements ceeb_devices_file_path "
+"(str): Path to the CSV file containing CEEB device data."
+msgstr ""
+"terc (str): Kod TERC używany w instrukcjach importu "
+"ceeb_devices_file_path (str): Ścieżka do pliku CSV zawierającego dane "
+"urządzeń CEEB."
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:21
+msgid "This file path is validated to ensure it exists and has a .csv extension."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:22
+msgid ""
+"ceeb_class_file_path (str): Path to the CSV file containing CEEB class "
+"data."
+msgstr ""
+"ceeb_class_file_path (str): Ścieżka do pliku CSV zawierającego dane klasy"
+" CEEB."
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:23
+msgid ""
+"This file path is also validated to ensure it exists and has a .csv "
+"extension."
+msgstr ""
+"Ścieżka do tego pliku jest również weryfikowana, aby upewnić się, że "
+"istnieje i ma rozszerzenie .csv."
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:24
+msgid ""
+"tmp_table_schema (str): Temporary table schema name used in the "
+"application."
+msgstr ""
+"tmp_table_schema (str): Nazwa schematu tymczasowej tabeli używanej w "
+"aplikacji."
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:26
+msgid "Methods:"
+msgstr "Metody:"
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:27
+msgid ""
+"check_file_exists_and_is_csv (classmethod): Validates that specified file"
+" paths"
+msgstr ""
+"check_file_exists_and_is_csv (classmethod): Waliduje, że podane ścieżki "
+"do plików"
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:28
+msgid "for CEEB device and class files exist on disk and have a .csv extension."
+msgstr ""
+"dla plików urządzeń CEEB i klas, które istnieją na dysku i mają "
+"rozszerzenie .csv."
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:51
+msgid "Validates that the file exists at the given path and has a .csv extension."
+msgstr "Weryfikuje, czy plik istnieje pod podaną ścieżką i ma rozszerzenie .csv."
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:53
+#: ../../autoapi/datafusion/database/db_settings/index.rst:25
+#: ../../autoapi/datafusion/kiut/import_maps/index.rst:22
+#: ../../autoapi/datafusion/readers/ceeb_reader/index.rst:46
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:68
+#: ../../autoapi/datafusion/utils/image/normalization/index.rst:16
+#: ../../autoapi/datafusion/utils/utils/index.rst:31
+msgid "Args:"
+msgstr "Argumenty:"
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:54
+msgid "path (str): The file path to validate."
+msgstr "ścieżka (str): Ścieżka do pliku do weryfikacji."
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:56
+#: ../../autoapi/datafusion/kiut/array_slicer/index.rst:34
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:72
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:83
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_colors/index.rst:50
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_not_blank_pixels/index.rst:35
+#: ../../autoapi/datafusion/readers/base_reader/index.rst:38
+#: ../../autoapi/datafusion/readers/ceeb_reader/index.rst:49
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:39
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:48
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:57
+#: ../../autoapi/datafusion/utils/image/normalization/index.rst:22
+msgid "Returns:"
+msgstr "Zwraca:"
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:57
+msgid "str: The validated file path."
+msgstr "str: Zweryfikowana ścieżka do pliku."
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:59
+#: ../../autoapi/datafusion/utils/utils/index.rst:36
+msgid "Raises:"
+msgstr "Wywołuje wyjątek"
+
+#: ../../autoapi/datafusion/configs/ceeb_config/index.rst:60
+msgid "ValueError: If the file does not exist or does not have a .csv extension."
+msgstr "ValueError: Jeśli plik nie istnieje lub nie ma rozszerzenia .csv."
+
+#: ../../autoapi/datafusion/configs/config/index.rst:2
+msgid "datafusion.configs.config"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/config/index.rst:18
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:18
+msgid "Common base class for all non-exit exceptions."
+msgstr ""
+
+msgstr ""
+
+msgid "Configuration class for the DataAnalyzer."
+msgstr ""
+
+msgid ""
+"This class stores configuration parameters needed for data analysis. It "
+"inherits from BaseModel and contains the following attribute:"
+msgstr ""
+
+msgid ""
+"terc (str): A string representing a specific configuration parameter for "
+"the DataAnalyzer. output_path (Path | None): The path to the output "
+"directory in which file will be saved. If not provided, file not will be "
+"saved locally, just store in the database."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/default_paths/index.rst:2
+msgid "datafusion.configs.default_paths"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/index.rst:2
+msgid "datafusion.configs"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:2
+msgid "datafusion.configs.kiut_config"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst:22
+msgid "Enum where members are also (and must be) strings"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/kiut_config/index.rst
+msgid "abstractmethod"
+msgstr "metoda abstrakcyjna"
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:2
+msgid "datafusion.configs.pvgis_config"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:16
+msgid "lat: Latitude, in decimal degrees, south is negative."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:17
+msgid "lon: Longitude, in decimal degrees, west is negative."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:18
+msgid "peakpower: Nominal power of the PV system, in kW."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:19
+msgid ""
+"loss: Sum of system losses, in percent. The estimated system losses are "
+"all the losses in the system,"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:20
+msgid ""
+"which cause the power actually delivered to the electricity grid to be "
+"lower than the power produced by the PV modules. There are several causes"
+" for this loss, such as losses in cables, power inverters, dirt "
+"(sometimes snow) on the modules and so on. Over the years the modules "
+"also tend to lose a bit of their power, so the average yearly output over"
+" the lifetime of the system will be a few percent lower than the output "
+"in the first years."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:27
+msgid "startyear: First year of the output of hourly averages."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:28
+msgid "endyear: Final year of the output of hourly averages."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:29
+msgid ""
+"trackingtype: Type of suntracking used, 0=fixed, 1=single horizontal axis"
+" aligned north-south,"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:30
+msgid ""
+"2=two-axis tracking, 3=vertical axis tracking, 4=single horizontal axis "
+"aligned east-west, 5=single inclined axis aligned north-south."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:33
+msgid ""
+"optimalangles: Calculate the optimum inclination AND orientation angles. "
+"Value of 1 for \"yes\"."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:34
+msgid "All other values (or no value) mean \"no\"."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:35
+msgid ""
+"pvtechchoice: PV technology. Choices are: \"crystSi\", \"CIS\", \"CdTe\" "
+"and \"Unknown\"."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:36
+msgid ""
+"mountingplace: Type of mounting of the PV modules. Choices are: \"free\" "
+"for free-standing and \"building\""
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:37
+msgid ""
+"for building-integrated. In PVGIS there are two possibilities: free-"
+"standing, meaning that the modules are mounted on a rack with air flowing"
+" freely behind the modules; and building- integrated, which means that "
+"the modules are completely built into the structure of the wall or roof "
+"of a building, with no air movement behind the modules."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:43
+msgid ""
+"pvcalculation: If \"0\" outputs only solar radiation calculations, if "
+"\"1\" outputs the estimation of hourly"
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/pvgis_config/index.rst:44
+msgid "PV production as well."
+msgstr ""
+
+#: ../../autoapi/datafusion/configs/report_config/index.rst:2
+msgid "datafusion.configs.report_config"
+msgstr ""
+
+#: ../../autoapi/datafusion/constants/index.rst:2
+msgid "datafusion.constants"
+msgstr ""
+
+msgstr ""
+
+msgstr ""
+
+msgid "Sets the working directory for R scripts and loads the specified R script."
+msgstr ""
+
+msgid "str: The contents of the R script loaded from the specified directory."
+msgstr ""
+
+msgid "FileNotFoundError: If the main R script does not exist."
+msgstr ""
+
+msgid "Executes an R function within the R environment and returns the result."
+msgstr ""
+
+msgid ""
+"This function takes the name of an R function and an input structure, "
+"executes the R function using the input structure, and processes the "
+"result into a `DataAnalyzerResult` object."
+msgstr ""
+
+msgid ""
+"function_name (str): The name of the R function to execute. "
+"input_structure (DataAnalyzerInputStructure): The input data structure"
+msgstr ""
+
+msgid "to pass to the R function."
+msgstr ""
+
+msgid "DataAnalyzerResult: The result of the R function execution, wrapped in"
+msgstr ""
+
+msgid "a `DataAnalyzerResult` object."
+msgstr ""
+
+msgid "Executes an R function for configuration validation."
+msgstr ""
+
+msgid ""
+"This function takes the name of an R function, executes it within the R "
+"environment, and logs the execution for configuration validation "
+"purposes."
+msgstr ""
+
+msgid "function_name (str): The name of the R function to execute."
+msgstr ""
+
+msgid "Executes an R-based calculation using the provided input structure."
+msgstr ""
+
+msgid ""
+"This function sets up the R environment, runs configuration validation, "
+"and then executes an R function for data merging, returning the results."
+msgstr ""
+
+msgid ""
+"input_structure (DataAnalyzerInputStructure): The input data structure to"
+" be used by the R function."
+msgstr ""
+
+msgid ""
+"DataAnalyzerResult: The result of the R function execution, wrapped in a "
+"DataAnalyzerResult object."
+msgstr ""
+
+msgstr ""
+
+msgid "Enum class for storing the names of R scripts functions."
+msgstr ""
+
+msgid ""
+"This class provides named constants for R script functions that will be "
+"used in the execution of R calculations."
+msgstr ""
+
+msgid ""
+"config_yml_validation (str): Function name for the YAML validation "
+"process in R. run_merging_data (str): Function name for the data merging "
+"process in R."
+msgstr ""
+
+msgid "Data structure to hold the result of the data analysis."
+msgstr ""
+
+msgid ""
+"This class holds the results of an R-based data analysis, specifically "
+"the merged data. It provides a property to access the result as a "
+"dictionary."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"merged_bdot_ceeb (pd.DataFrame): The merged DataFrame containing the "
+"processed data."
+msgstr "pd.DataFrame: DataFrame zawierający dane z pliku CSV."
+
+msgid "Converts the DataAnalyzerResult instance into a dictionary."
+msgstr ""
+
+msgid "dict: A dictionary representation of the DataAnalyzerResult with the"
+msgstr ""
+
+msgid "DataFrame stored in the merged_bdot_ceeb attribute."
+msgstr ""
+
+msgid "Data structure to hold the input data for the analysis."
+msgstr ""
+
+msgid ""
+"This class holds the input data necessary for the R-based calculations, "
+"including data about CEEB classes, devices, and building reports. It "
+"provides a property to access the input data as a dictionary."
+msgstr ""
+
+msgid ""
+"ceeb_classes (pd.DataFrame): DataFrame containing information about CEEB "
+"classes. ceeb_devices (pd.DataFrame): DataFrame containing information "
+"about CEEB devices. buildings_report (pd.DataFrame): DataFrame containing"
+" the buildings report."
+msgstr ""
+
+msgid "Converts the DataAnalyzerInputStructure instance into a dictionary."
+msgstr ""
+
+msgid "dict: A dictionary representation of the DataAnalyzerInputStructure"
+msgstr ""
+
+msgid ""
+"with DataFrames for each of the input attributes (ceeb_classes, "
+"ceeb_devices, buildings_report)."
+msgstr ""
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:2
+msgid "datafusion.database.db_settings"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:18
+msgid ""
+"Base class for settings, allowing values to be overridden by environment "
+"variables."
+msgstr ""
+"Klasa bazowa dla ustawień, pozwalająca na nadpisywanie wartości przez "
+"zmienne środowiskowe."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:20
+msgid ""
+"This is useful in production for secrets you do not wish to save in code,"
+" it plays nicely with docker(-compose), Heroku and any 12 factor app "
+"design."
+msgstr ""
+"Jest to przydatne w produkcji dla sekretów, których nie chcesz "
+"przechowywać w kodzie; dobrze współpracuje z docker(-compose), Heroku i "
+"każdym projektem zaprojektowanym zgodnie z zasadą 12 czynników."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:23
+msgid "All the below attributes can be set via `model_config`."
+msgstr "Wszystkie poniższe atrybuty można ustawić za pomocą model_config."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:26
+msgid ""
+"_case_sensitive: Whether environment variables names should be read with "
+"case-sensitivity. Defaults to `None`. _env_prefix: Prefix for all "
+"environment variables. Defaults to `None`. _env_file: The env file(s) to "
+"load settings values from. Defaults to `Path('')`, which"
+msgstr ""
+"_case_sensitive: Czy nazwy zmiennych środowiskowych powinny być "
+"odczytywane z uwzględnieniem wielkości liter. Domyślnie `None`. "
+"_env_prefix: Prefiks dla wszystkich zmiennych środowiskowych. Domyślnie "
+"`None`. _env_file: Plik env do załadowania wartości ustawień. Domyślnie "
+"`Path('')`, co"
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:29
+msgid ""
+"means that the value from `model_config['env_file']` should be used. You "
+"can also pass `None` to indicate that environment variables should not be"
+" loaded from an env file."
+msgstr ""
+"oznacza, że należy użyć wartości z `model_config['env_file']`. Możesz "
+"również przekazać `None`, aby wskazać, że zmienne środowiskowe nie "
+"powinny być ładowane z pliku env."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:31
+msgid ""
+"_env_file_encoding: The env file encoding, e.g. `'latin-1'`. Defaults to "
+"`None`. _env_ignore_empty: Ignore environment variables where the value "
+"is an empty string. Default to `False`. _env_nested_delimiter: The nested"
+" env values delimiter. Defaults to `None`. _env_parse_none_str: The env "
+"string value that should be parsed (e.g. \"null\", \"void\", \"None\", "
+"etc.)"
+msgstr ""
+"_env_file_encoding: Kodowanie pliku env, np. `'latin-1'`. Domyślnie "
+"`None`. _env_ignore_empty: Ignoruj zmienne środowiskowe, których wartość "
+"jest pustym ciągiem. Domyślnie `False`. _env_nested_delimiter: Separator "
+"nadzbiorczych wartości env. Domyślnie `None`. _env_parse_none_str: "
+"Wartość ciągu env, która powinna być analizowana (np. \"null\", \"void\","
+" \"None\", itd.)"
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:35
+msgid ""
+"into `None` type(None). Defaults to `None` type(None), which means no "
+"parsing should occur."
+msgstr ""
+"do `None` type(None). Domyślnie `None` type(None), co oznacza, że nie "
+"powinna zachodzić analiza."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:36
+msgid ""
+"_env_parse_enums: Parse enum field names to values. Defaults to `None.`, "
+"which means no parsing should occur. _cli_prog_name: The CLI program name"
+" to display in help text. Defaults to `None` if _cli_parse_args is "
+"`None`."
+msgstr ""
+"_env_parse_enums: Analizuj nazwy pól enum na wartości. Domyślnie `None`, "
+"co oznacza, że nie powinna zachodzić analiza. _cli_prog_name: Nazwa "
+"programu CLI, która ma być wyświetlana w tekście pomocy. Domyślnie "
+"`None`, jeśli _cli_parse_args to `None`."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:38
+msgid "Otherwse, defaults to sys.argv[0]."
+msgstr "W przeciwnym razie domyślnie to sys.argv[0]."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:39
+msgid "_cli_parse_args: The list of CLI arguments to parse. Defaults to None."
+msgstr "_cli_parse_args: Lista argumentów CLI do analizy. Domyślnie None."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:40
+msgid "If set to `True`, defaults to sys.argv[1:]."
+msgstr "Jeśli ustawione na `True`, domyślnie to sys.argv[1:]."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:41
+msgid ""
+"_cli_settings_source: Override the default CLI settings source with a "
+"user defined instance. Defaults to None. _cli_parse_none_str: The CLI "
+"string value that should be parsed (e.g. \"null\", \"void\", \"None\", "
+"etc.) into"
+msgstr ""
+"_cli_settings_source: Nadpisz domyślne źródło ustawień CLI użytkownikowym"
+" instancją. Domyślnie None. _cli_parse_none_str: Wartość ciągu CLI, która"
+" powinna być analizowana (np. \"null\", \"void\", \"None\", itd.) do"
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:43
+msgid ""
+"`None` type(None). Defaults to _env_parse_none_str value if set. "
+"Otherwise, defaults to \"null\" if _cli_avoid_json is `False`, and "
+"\"None\" if _cli_avoid_json is `True`."
+msgstr ""
+"`None` type(None). Domyślnie wartość _env_parse_none_str, jeśli jest "
+"ustawiona. W przeciwnym razie domyślnie to \"null\", jeśli "
+"_cli_avoid_json to `False`, a \"None\", jeśli _cli_avoid_json to `True`."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:45
+msgid ""
+"_cli_hide_none_type: Hide `None` values in CLI help text. Defaults to "
+"`False`. _cli_avoid_json: Avoid complex JSON objects in CLI help text. "
+"Defaults to `False`. _cli_enforce_required: Enforce required fields at "
+"the CLI. Defaults to `False`. _cli_use_class_docs_for_groups: Use class "
+"docstrings in CLI group help text instead of field descriptions."
+msgstr ""
+"_cli_hide_none_type: Ukryj wartości `None` w tekście pomocy CLI. "
+"Domyślnie `False`. _cli_avoid_json: Unikaj złożonych obiektów JSON w "
+"tekście pomocy CLI. Domyślnie `False`. _cli_enforce_required: Wymuszaj "
+"wymagane pola w CLI. Domyślnie `False`. _cli_use_class_docs_for_groups: "
+"Użyj docstringów klasy w tekście pomocy grupy CLI zamiast opisów pól."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:49
+msgid "Defaults to `False`."
+msgstr "Domyślnie to `False`."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:50
+msgid ""
+"_cli_exit_on_error: Determines whether or not the internal parser exits "
+"with error info when an error occurs."
+msgstr ""
+"_cli_exit_on_error: Określa, czy wewnętrzny parser kończy działanie z "
+"informacją o błędzie, gdy wystąpi błąd."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:51
+msgid "Defaults to `True`."
+msgstr "Domyślnie to `True`."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:52
+msgid ""
+"_cli_prefix: The root parser command line arguments prefix. Defaults to "
+"\"\". _secrets_dir: The secret files directory. Defaults to `None`."
+msgstr ""
+"_cli_prefix: Prefiks głównych argumentów wiersza poleceń parsera. "
+"Domyślnie \"\". _secrets_dir: Katalog plików z tajemnicami. Domyślnie "
+"`None`."
+
+#: ../../autoapi/datafusion/database/db_settings/index.rst:81
+msgid ""
+"SRID - Spatial Reference System Identifier identifier specifying "
+"coordinate system, projection and datum for spacial data"
+msgstr ""
+"SRID - identyfikator systemu odniesienia przestrzennego określający układ"
+" współrzędnych, projekcję i datę dla danych przestrzennych."
+
+#: ../../autoapi/datafusion/database/index.rst:2
+msgid "datafusion.database"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/initialize/index.rst:2
+msgid "datafusion.database.initialize"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/address_point/index.rst:2
+msgid "datafusion.database.models.address_point"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/administrative_boundary/index.rst:2
+msgid "datafusion.database.models.administrative_boundary"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/base/index.rst:2
+msgid "datafusion.database.models.base"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/base_class/index.rst:2
+msgid "datafusion.database.models.base_class"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/bdot/index.rst:2
+msgid "datafusion.database.models.bdot"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/import_metadata/index.rst:2
+msgid "datafusion.database.models.import_metadata"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/index.rst:2
+msgid "datafusion.database.models"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/kiut_layer/index.rst:2
+msgid "datafusion.database.models.kiut_layer"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/map/index.rst:2
+msgid "datafusion.database.models.map"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/map/index.rst:16
+msgid "Create a collection of name/value pairs."
+msgstr "Zwraca kolekcje par nazwa/wartość"
+
+#: ../../autoapi/datafusion/database/models/map/index.rst:18
+msgid "Example enumeration:"
+msgstr "Przykładowa enumeracja"
+
+#: ../../autoapi/datafusion/database/models/map/index.rst:25
+msgid "Access them by:"
+msgstr "Dostęp do nich przez:"
+
+#: ../../autoapi/datafusion/database/models/map/index.rst:27
+msgid "attribute access:"
+msgstr "attrybut dostępu:"
+
+#: ../../autoapi/datafusion/database/models/map/index.rst:32
+msgid "value lookup:"
+msgstr "szukana wartość:"
+
+#: ../../autoapi/datafusion/database/models/map/index.rst:37
+msgid "name lookup:"
+msgstr "szukana nazwa"
+
+#: ../../autoapi/datafusion/database/models/map/index.rst:42
+msgid "Enumerations can be iterated over, and know how many members they have:"
+msgstr "Wyliczenia mogą być iterowane i wiedzą, ile mają członków:"
+
+#: ../../autoapi/datafusion/database/models/map/index.rst:50
+msgid ""
+"Methods can be added to enumerations, and members can have their own "
+"attributes -- see the documentation for details."
+msgstr ""
+"Metody mogą być dodawane do wyliczeń, a członkowie mogą mieć własne "
+"atrybuty -- zobacz dokumentację po szczegóły."
+
+#: ../../autoapi/datafusion/database/models/mapping_import_to_terc/index.rst:2
+msgid "datafusion.database.models.mapping_import_to_terc"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/pvgis/index.rst:2
+msgid "datafusion.database.models.pvgis"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/pvgis/index.rst:16
+msgid ""
+"P - PV system power units: W G_i - Global irradiance on the inclined "
+"plane (plane of the array) units: W/m2 H_sun - Sun height units: degree "
+"T2m 2-m air temperature units: degree Celsius WS10m - 10-m total wind "
+"speed: units m/s Int - 1 means solar radiation values are reconstructed"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/terc/index.rst:2
+msgid "datafusion.database.models.terc"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/models/tile/index.rst:2
+msgid "datafusion.database.models.tile"
+msgstr ""
+
+#: ../../autoapi/datafusion/database/session/index.rst:2
+msgid "datafusion.database.session"
+msgstr ""
+
+#: ../../autoapi/datafusion/index.rst:2
+msgid "datafusion"
+msgstr ""
+
+#: ../../autoapi/datafusion/index.rst:31
+msgid "Package Contents"
+msgstr "Zawartość paczki"
+
+#: ../../autoapi/datafusion/jsons/bdot_mapper/index.rst:2
+msgid "datafusion.jsons.bdot_mapper"
+msgstr ""
+
+#: ../../autoapi/datafusion/jsons/index.rst:2
+msgid "datafusion.jsons"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/array_slicer/index.rst:2
+msgid "datafusion.kiut.array_slicer"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/array_slicer/index.rst:20
+msgid "ArraySlicer slice bigger arrays of geo data to smaller pieces."
+msgstr ""
+"ArraySlicer dzieli większe tablice danych geograficznych na mniejsze "
+"fragmenty."
+
+#: ../../autoapi/datafusion/kiut/array_slicer/index.rst:22
+msgid "The aim of this class is to allow you to slice the biggest arrays."
+msgstr "Celem tej klasy jest umożliwienie dzielenia największych tablic."
+
+#: ../../autoapi/datafusion/kiut/array_slicer/index.rst:30
+#, fuzzy
+msgid ""
+"This functino performs slicing the geodata Array to smaller pieces, "
+"preserving the RGBA data. Args:"
+msgstr ""
+"Ta funkcja wykonuje dzielenie tablicy danych geograficznych na mniejsze "
+"fragmenty, zachowując dane RGBA. Argumenty:"
+
+#: ../../autoapi/datafusion/kiut/array_slicer/index.rst:32
+msgid "obj (GeomapRGBAArray): GeomapRGBAArray object instance"
+msgstr "obj (GeomapRGBAArray): Instancja obiektu GeomapRGBAArray"
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:2
+msgid "datafusion.kiut.geomap_array"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:14
+msgid "Class for representing a geomap with RGBA data."
+msgstr "Klasa reprezentująca mapę geograficzną z danymi RGBA"
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:33
+msgid "Returns array with RGBA data."
+msgstr "Zwraca tablicę z danymi RGBA."
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:42
+msgid "Returns scale x value. Returns: scaled x value."
+msgstr "Zwraca wartość skali x. Zwraca: wartość skali x."
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:52
+msgid "Returns scale y value. Returns: scaled y value."
+msgstr "Zwraca wartość skali y. Zwraca: wartość skali y."
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:60
+msgid ""
+"Returns a polygon geometry of the array. Returns (Polygon): Polygon "
+"geometry of the array."
+msgstr ""
+"Zwraca geometrię wielokąta tablicy. Zwraca (Polygon): Geometria wielokąta"
+" tablicy."
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:68
+msgid "Returns x value for a given column index Args:"
+msgstr "Zwraca wartość x dla danego indeksu kolumny Argumenty:"
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:70
+msgid "col_idx (int): Column index"
+msgstr "col_idx (int): Indeks kolumny"
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:73
+msgid "Returns x coordinates of the column."
+msgstr "Zwraca współrzędne x kolumny."
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:79
+msgid "Return y value for a given row index Args:"
+msgstr "Zwraca wartość y dla danego indeksu wiersza Argumenty:"
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:81
+msgid "row_idx (int): Row index"
+msgstr "row_idx (int): Indeks wiersza"
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:84
+msgid "Returns y coordinates of the row."
+msgstr "Zwraca współrzędne y wiersza."
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:90
+msgid "Return a PIL image of the array. Returns:"
+msgstr "Zwraca obraz PIL tablicy. Zwraca:"
+
+#: ../../autoapi/datafusion/kiut/geomap_array/index.rst:92
+msgid "Returns PIL image of the array."
+msgstr "Zwraca obraz PIL tablicy."
+
+#: ../../autoapi/datafusion/kiut/import_maps/index.rst:2
+msgid "datafusion.kiut.import_maps"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/import_maps/index.rst:20
+msgid "Function for importing maps from WMS service"
+msgstr "Funkcja do importowania map z usługi WMS"
+
+#: ../../autoapi/datafusion/kiut/import_maps/index.rst:23
+#, fuzzy
+msgid ""
+"db_engine: (Engine) SQLAlchemy engine instance layer_name (str): Layer "
+"name import_id (int): import id terc (str): wms_params (WMSConfig): "
+"WMSCofnig instance"
+msgstr ""
+"db: (Sesja) warstwa SQLAlchemy layer_name (str): Nazwa warstwy import_id "
+"(int): identyfikator importu terc (str): wms_params (WMSConfig): "
+"instancja WMSCofnig"
+
+#: ../../autoapi/datafusion/kiut/import_tiles/index.rst:2
+msgid "datafusion.kiut.import_tiles"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/import_tiles/index.rst:18
+msgid "Function for importing and analyzing KiUT tiles into the database Args:"
+msgstr "Funkcja do importowania i analizowania kafelków KiUT w bazie danych Args:"
+
+#: ../../autoapi/datafusion/kiut/import_tiles/index.rst:20
+msgid ""
+"db_engine (Engine): Sqlalchemy engine instance import_id (int): Import ID"
+" based on metadata checker (LayerChecker): Instance of LayerChecker "
+"slicer(ArraySlicer): Instance of ArraySlicer: srid (int): srid used in "
+"POSTGIS geometry:"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/index.rst:2
+msgid "datafusion.kiut"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/layers/index.rst:2
+msgid "datafusion.kiut.layers"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/layers/index.rst:18
+msgid "Enumeration of allowed layer names."
+msgstr "Enumeracja dozwolonych nazw wartstw."
+
+#: ../../autoapi/datafusion/kiut/layers/index.rst:65
+msgid "Enumeration of layer names."
+msgstr "Enumeracja nazw warstw."
+
+#: ../../autoapi/datafusion/kiut/map_analyze/factory/index.rst:2
+msgid "datafusion.kiut.map_analyze.factory"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/map_analyze/factory/index.rst:22
+msgid "Factory for Polygonizer"
+msgstr "Fabryka klasy Polygonizer"
+
+#: ../../autoapi/datafusion/kiut/map_analyze/index.rst:2
+msgid "datafusion.kiut.map_analyze"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_colors/index.rst:2
+msgid "datafusion.kiut.map_analyze.layer_checkers.check_by_colors"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_colors/index.rst:22
+msgid "Exception for CheckByLayerColors"
+msgstr "Wyjątek dla CheckByLayerColors"
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_colors/index.rst:29
+msgid ""
+"Class for implementing algotithm of checking the layer color from the "
+"image data."
+msgstr ""
+"Klasa do implementacji algorytmu sprawdzania koloru warstwy na podstawie "
+"danych obrazu."
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_colors/index.rst:46
+msgid "This function gets the existing layers from a numpy array Args:"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_colors/index.rst:48
+msgid "array (np.ndarray): Numpy array with input RGBA data"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_colors/index.rst:51
+msgid "existing_layers (ExistingLayers): Existing layers"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_not_blank_pixels/index.rst:2
+msgid "datafusion.kiut.map_analyze.layer_checkers.check_by_not_blank_pixels"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_not_blank_pixels/index.rst:20
+#, fuzzy
+msgid ""
+"This funciton implements the algorithm of layers checking called check by"
+" not blank pixels."
+msgstr ""
+"Ta funkcja implementuje algorytm sprawdzania warstw zwany sprawdzaniem na"
+" podstawie niepustych pikseli."
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_not_blank_pixels/index.rst:31
+msgid "Gets existing layers according to the given array. Args:"
+msgstr "Zwraca istniejące warstwy zgodnie z podaną tablicą. Argumenty:"
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_not_blank_pixels/index.rst:33
+msgid "array (np.ndarray): Array to be checked."
+msgstr "array (np.ndarray): Tablica do sprawdzenia."
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/check_by_not_blank_pixels/index.rst:36
+#, fuzzy
+msgid "Retuns a list of existing layers."
+msgstr "Zwraca listę istniejących warstw."
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/index.rst:2
+msgid "datafusion.kiut.map_analyze.layer_checkers"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/interface/index.rst:2
+msgid "datafusion.kiut.map_analyze.layer_checkers.interface"
+msgstr ""
+
+#: ../../autoapi/datafusion/kiut/map_analyze/layer_checkers/interface/index.rst:20
+msgid ""
+"This is an abstract base class that defines the interface for all layer "
+"checkers."
+msgstr "Klasa abstrakcyjna definiująca interfejs dla sprawdzania warstw"
+
+#: ../../autoapi/datafusion/prg/address_points_procedures/index.rst:2
+msgid "datafusion.prg.address_points_procedures"
+msgstr ""
+
+#: ../../autoapi/datafusion/prg/index.rst:2
+msgid "datafusion.prg"
+msgstr ""
+
+#: ../../autoapi/datafusion/readers/address_reader/index.rst:2
+msgid "datafusion.readers.address_reader"
+msgstr ""
+
+#: ../../autoapi/datafusion/readers/address_reader/index.rst:16
+msgid "Class for reading addressed from geopportal"
+msgstr "Klasa służąca do odczytywania danych adresowych z geoportalu."
+
+#: ../../autoapi/datafusion/readers/address_reader/index.rst:18
+msgid ""
+"The aim of this class is to parse the open data from geoportal and to "
+"import data to database."
+msgstr ""
+"Celem tej klasy jest parsowanie otwartych danych z geoportalu i ich zapis"
+" w bazie danych."
+
+#: ../../autoapi/datafusion/readers/address_reader/index.rst:36
+msgid "This function reads the data from geoportal and writes it to database."
+msgstr "Ta fukncja odczytuje dane z geoportalu i zapisuje je w bazie danych"
+
+#: ../../autoapi/datafusion/readers/base_reader/index.rst:2
+msgid "datafusion.readers.base_reader"
+msgstr ""
+
+#: ../../autoapi/datafusion/readers/base_reader/index.rst:16
+msgid "Abstract class for data reader class."
+msgstr "Abstrakcyjna klasa dla klasy czytnika danych."
+
+#: ../../autoapi/datafusion/readers/base_reader/index.rst:23
+msgid "Abstract method for running reader."
+msgstr "Abstrakcyjna metoda do uruchamiania czytnika."
+
+#: ../../autoapi/datafusion/readers/base_reader/index.rst:31
+msgid "Function creates entry in meta data table. Args:"
+msgstr "Funkcja tworzy wpis w tabeli metadanych. Argumenty:"
+
+#: ../../autoapi/datafusion/readers/base_reader/index.rst:33
+#, fuzzy
+msgid ""
+"table_name (str): Table name. config: Config object engine "
+"(sqlalchemy.engine.Engine): Engine object. use_tmp_schema (bool): Use tmp"
+" schema when reading from database."
+msgstr ""
+"session (sqlalchemy.orm.Session): Obiekt sesji. table_name (str): Nazwa "
+"tabeli. config: Obiekt konfiguracyjny. engine (sqlalchemy.engine.Engine):"
+" Obiekt silnika. use_tmp_schema (bool): Użyj tymczasowego schematu "
+"podczas odczytu z bazy danych."
+
+#: ../../autoapi/datafusion/readers/bdot_reader/index.rst:2
+msgid "datafusion.readers.bdot_reader"
+msgstr ""
+
+#: ../../autoapi/datafusion/readers/bdot_reader/index.rst:16
+msgid "Class for handling importing data from BDOT to the database."
+msgstr "Klasa do obsługi importu danych z BDOT do bazy danych."
+
+#: ../../autoapi/datafusion/readers/bdot_reader/index.rst:30
+msgid "Function for importing data from BDOT to the database."
+msgstr "Funkcja do importu danych z BDOT do bazy danych."
+
+#: ../../autoapi/datafusion/readers/borders_reader/index.rst:2
+msgid "datafusion.readers.borders_reader"
+msgstr ""
+
+#: ../../autoapi/datafusion/readers/borders_reader/index.rst:16
+msgid "Class for reading data from Państwowy Rejestr Granic to database."
+msgstr "Klasa do odczytu danych z Państwowego Rejestru Granic do bazy danych."
+
+#: ../../autoapi/datafusion/readers/borders_reader/index.rst:30
+msgid "Function to run reading data from database."
+msgstr "Funkcja do uruchomienia odczytu danych z bazy danych."
+
+#: ../../autoapi/datafusion/readers/ceeb_reader/index.rst:2
+msgid "datafusion.readers.ceeb_reader"
+msgstr ""
+
+#: ../../autoapi/datafusion/readers/ceeb_reader/index.rst:16
+msgid "Reader class for importing CEEB data into a database."
+msgstr "Klasa czytnika do importowania danych CEEB do bazy danych."
+
+#: ../../autoapi/datafusion/readers/ceeb_reader/index.rst:18
+msgid ""
+"This class is responsible for reading CEEB data from specified file "
+"paths, validating the data schema, and saving the data to the database."
+msgstr ""
+"Klasa ta odpowiada za odczyt danych CEEB z określonych ścieżek plików, "
+"walidację schematu danych i zapis danych do bazy danych."
+
+#: ../../autoapi/datafusion/readers/ceeb_reader/index.rst:33
+msgid "Executes the CEEB reading process."
+msgstr "Uruchamia proces odczytu CEEB."
+
+#: ../../autoapi/datafusion/readers/ceeb_reader/index.rst:35
+msgid ""
+"This method orchestrates the reading of CEEB data from the configured "
+"file paths, processes it, and saves it to the database."
+msgstr ""
+"Ta metoda koordynuje odczyt danych CEEB z skonfigurowanych ścieżek "
+"plików, przetwarza je i zapisuje do bazy danych."
+
+#: ../../autoapi/datafusion/readers/ceeb_reader/index.rst:44
+msgid "Reads a CSV file into a DataFrame."
+msgstr "Odczytuje plik CSV do DataFrame."
+
+#: ../../autoapi/datafusion/readers/ceeb_reader/index.rst:47
+msgid "file_path (Path): The path to the CSV file to read."
+msgstr "file_path (Path): Ścieżka do pliku CSV do odczytu."
+
+#: ../../autoapi/datafusion/readers/ceeb_reader/index.rst:50
+msgid "pd.DataFrame: The DataFrame containing the data from the CSV file."
+msgstr "pd.DataFrame: DataFrame zawierający dane z pliku CSV."
+
+msgstr ""
+
+#, fuzzy
+msgid ""
+"A class for reading and processing data from a database for analysis, and"
+" saving results back to the database."
+msgstr "Klasa do obsługi importu danych z BDOT do bazy danych."
+
+msgid ""
+"This class is responsible for loading data from a database, assembling "
+"the necessary input structure for analysis, and saving the results back "
+"to the database. It connects to the database using SQLAlchemy's `Session`"
+" and `Engine` objects, and uses configuration and settings provided "
+"during initialization."
+msgstr ""
+
+msgid ""
+"Loads the input data structure for analysis by fetching relevant data "
+"from the database and assembling it into a `DataAnalyzerInputStructure`."
+msgstr ""
+
+msgid ""
+"DataAnalyzerInputStructure: The input structure containing the data "
+"required for analysis, including `ceeb_devices`, `ceeb_classes`, and "
+"`buildings_report` DataFrames."
+msgstr ""
+
+msgid "Saves the results of the data analysis to the database."
+msgstr ""
+
+msgid ""
+"Iterates through the DataFrames in the output structure and saves them to"
+" the corresponding tables in the database, replacing the existing tables."
+" Commits the changes to the database after saving the results."
+msgstr ""
+
+msgid ""
+"output_structure (DataAnalyzerResult): The results of the data analysis, "
+"which are to be saved back to the database."
+msgstr ""
+
+msgid ""
+"Exception: If there is an issue with the database connection or saving "
+"data."
+msgstr ""
+
+msgid "Saves the results of data analysis to an Excel file."
+msgstr ""
+
+msgid ""
+"If an output path is configured, this method saves the 'merged_bdot_ceeb'"
+" DataFrame from the output structure to an Excel file. It checks if the "
+"specified output directory exists, and creates it if it does not."
+msgstr ""
+
+msgid "output_structure (DataAnalyzerResult): The structure containing the"
+msgstr ""
+
+msgid "DataFrame 'merged_bdot_ceeb' with the analysis results."
+msgstr ""
+
+#: ../../autoapi/datafusion/readers/index.rst:2
+msgid "datafusion.readers"
+msgstr ""
+
+#: ../../autoapi/datafusion/readers/kiut_reader/index.rst:2
+msgid "datafusion.readers.kiut_reader"
+msgstr ""
+
+#: ../../autoapi/datafusion/readers/kiut_reader/index.rst:24
+msgid "A class used to read data from KIUT database."
+msgstr "Klasa używana do odczytu danych z bazy danych KIUT."
+
+#: ../../autoapi/datafusion/readers/kiut_reader/index.rst:26
+#, fuzzy
+msgid ""
+"This class handles importing KIUT data to database, which includes "
+"importing information from geopartal and performs image processing of the"
+" desired layer. The results are saved to output database."
+msgstr ""
+"Ta klasa zajmuje się importowaniem danych KIUT do bazy danych, co "
+"obejmuje importowanie informacji z geoportal i przetwarzanie obrazów "
+"żądanego poziomu. Wyniki są zapisywane w bazie danych wyjściowej."
+
+#: ../../autoapi/datafusion/readers/kiut_reader/index.rst:40
+msgid "Executed the KIUT reader import process"
+msgstr "Wykonano proces importu czytnika KIUT."
+
+#: ../../autoapi/datafusion/readers/pvgis_reader/index.rst:2
+msgid "datafusion.readers.pvgis_reader"
+msgstr ""
+
+#: ../../autoapi/datafusion/readers/pvgis_reader/index.rst:20
+#, fuzzy
+msgid "A class used to read data from PVGIS database."
+msgstr "Klasa używana do odczytu danych z bazy danych KIUT."
+
+#: ../../autoapi/datafusion/readers/pvgis_reader/index.rst:22
+#, fuzzy
+msgid ""
+"This class handles importing PVGIS data to database, which includes "
+"importing information from online database. The results are saved to "
+"output database."
+msgstr ""
+"Ta klasa zajmuje się importowaniem danych KIUT do bazy danych, co "
+"obejmuje importowanie informacji z geoportal i przetwarzanie obrazów "
+"żądanego poziomu. Wyniki są zapisywane w bazie danych wyjściowej."
+
+#: ../../autoapi/datafusion/readers/pvgis_reader/index.rst:35
+#, fuzzy
+msgid "Executes PVGIS reading process"
+msgstr "Uruchamia proces odczytu CEEB."
+
+#: ../../autoapi/datafusion/reporting/constants/index.rst:2
+msgid "datafusion.reporting.constants"
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/index.rst:2
+msgid "datafusion.reporting"
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:2
+msgid "datafusion.reporting.reporting"
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:31
+msgid "Create dataframe with building data and optionally save it to xlsx file."
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:37
+msgid "Calculation and processing buildings' dataframe."
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:40
+msgid "DataFrame: extended building data."
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:46
+msgid "Read parameters from mock xlsx file"
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:49
+msgid "Parameters dictionary."
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:55
+msgid "Fetch data from database using postgres procedure"
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:58
+msgid "Dataframe with raw data from db."
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:66
+msgid "Fill dataframe with customized data"
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:69
+msgid "city_data: DataFrame with buildings"
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:70
+msgid "df_funkcja_szczegolowa: funkcja szczegółowa mapper"
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:71
+msgid "df_funkcja_ogolna: funkcja ogólna mapper"
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:72
+msgid "params: input parameters"
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:73
+msgid "Return:"
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/reporting/index.rst:74
+msgid "DataFrame: updated building data"
+msgstr ""
+
+#: ../../autoapi/datafusion/reporting/utils/index.rst:2
+msgid "datafusion.reporting.utils"
+msgstr ""
+
+#: ../../autoapi/datafusion/runners/address_runner/index.rst:2
+msgid "datafusion.runners.address_runner"
+msgstr ""
+
+#: ../../autoapi/datafusion/runners/address_runner/index.rst:18
+#: ../../autoapi/datafusion/runners/bdot_runner/index.rst:18
+#: ../../autoapi/datafusion/runners/borders_runner/index.rst:18
+#: ../../autoapi/datafusion/runners/ceeb_runner/index.rst:18
+#: ../../autoapi/datafusion/runners/kiut_runner/index.rst:18
+#: ../../autoapi/datafusion/runners/pvgis_runner/index.rst:18
+#: ../../autoapi/datafusion/runners/runner/index.rst:20
+msgid ""
+"Helper class that provides a standard way to create an ABC using "
+"inheritance."
+msgstr ""
+
+#: ../../autoapi/datafusion/runners/bdot_runner/index.rst:2
+msgid "datafusion.runners.bdot_runner"
+msgstr ""
+
+#: ../../autoapi/datafusion/runners/borders_runner/index.rst:2
+msgid "datafusion.runners.borders_runner"
+msgstr ""
+
+#: ../../autoapi/datafusion/runners/ceeb_runner/index.rst:2
+msgid "datafusion.runners.ceeb_runner"
+msgstr ""
+
+msgstr ""
+
+msgid ""
+"Runs the Data Analyzer process using the provided configuration and "
+"resources."
+msgstr ""
+
+msgid ""
+"Args: config_path (Path): The path to the configuration file in YAML "
+"format. resources_path (Path, optional): The path to the resources "
+"directory containing input data."
+msgstr ""
+
+msgid ""
+"Args: config (Path): The path to the configuration file in YAML format. "
+"This file contains the necessary settings and parameters for the Data "
+"Analyzer process."
+msgstr ""
+
+#: ../../autoapi/datafusion/runners/index.rst:2
+msgid "datafusion.runners"
+msgstr ""
+
+#: ../../autoapi/datafusion/runners/kiut_runner/index.rst:2
+msgid "datafusion.runners.kiut_runner"
+msgstr ""
+
+#: ../../autoapi/datafusion/runners/pvgis_merger_runner/index.rst:2
+msgid "datafusion.runners.pvgis_merger_runner"
+msgstr ""
+
+#: ../../autoapi/datafusion/runners/pvgis_runner/index.rst:2
+msgid "datafusion.runners.pvgis_runner"
+msgstr ""
+
+#: ../../autoapi/datafusion/runners/report_runner/index.rst:2
+msgid "datafusion.runners.report_runner"
+msgstr ""
+
+#: ../../autoapi/datafusion/runners/runner/index.rst:2
+msgid "datafusion.runners.runner"
+msgstr ""
+
+#: ../../autoapi/datafusion/teryt_codes/index.rst:2
+msgid "datafusion.teryt_codes"
+msgstr ""
+
+#: ../../autoapi/datafusion/teryt_codes/teryt_codes/index.rst:2
+msgid "datafusion.teryt_codes.teryt_codes"
+msgstr ""
+
+#: ../../autoapi/datafusion/teryt_codes/teryt_codes/index.rst:14
+msgid "https://eteryt.stat.gov.pl/eTeryt/rejestr_teryt/udostepnianie_danych/baza_teryt/uzytkownicy_indywidualni/pobieranie/pliki_pelne.aspx?contrast=default"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/crud/index.rst:2
+msgid "datafusion.utils.crud"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/image/color/index.rst:2
+msgid "datafusion.utils.image.color"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/image/distance/index.rst:2
+msgid "datafusion.utils.image.distance"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/image/distance/index.rst:16
+msgid ""
+"Implements `redmean` distance: "
+"https://en.wikipedia.org/wiki/Color_difference#sRGB"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/image/index.rst:2
+msgid "datafusion.utils.image"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/image/normalization/index.rst:2
+msgid "datafusion.utils.image.normalization"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/image/normalization/index.rst:14
+msgid "Normalize colors of KIUT layers to fit documentation values"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/image/normalization/index.rst:17
+msgid "arr (np.ndarray): array representing image (height,width,channels_no[4]):"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/image/normalization/index.rst:18
+msgid "red, green, blue, alpha"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/image/normalization/index.rst:19
+msgid "max_error (int, optional): Above the limit it is treated as an outlier."
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/image/normalization/index.rst:20
+msgid "Defaults to 10."
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/image/normalization/index.rst:23
+msgid "np.ndarray: Normalized ndarray. The same size as the input `arr`"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/image/serialize/index.rst:2
+msgid "datafusion.utils.image.serialize"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/index.rst:2
+msgid "datafusion.utils"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/ogr/index.rst:2
+msgid "datafusion.utils.ogr"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/remote/index.rst:2
+msgid "datafusion.utils.remote"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/setup_logging/index.rst:2
+msgid "datafusion.utils.setup_logging"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/setup_logging/index.rst:14
+msgid "Setup logging configuration"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/sql/index.rst:2
+msgid "datafusion.utils.sql"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/typings/index.rst:2
+msgid "datafusion.utils.typings"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/utils/index.rst:2
+msgid "datafusion.utils.utils"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/utils/index.rst:29
+msgid ""
+"Validates that the DataFrame contains the specified columns with the "
+"correct data types."
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/utils/index.rst:32
+msgid ""
+"df (pd.DataFrame): The DataFrame to validate. expected_schema (dict[str, "
+"List[str]]): A dictionary where each key is a data type"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/utils/index.rst:34
+msgid ""
+"(as a string, e.g., 'object', 'int64') and each value is a list of column"
+" names expected to have that data type.a"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/utils/index.rst:37
+msgid ""
+"ValueError: If any required column is missing from the DataFrame or if a "
+"column's data type"
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/utils/index.rst:38
+msgid "does not match the expected data type."
+msgstr ""
+
+#: ../../autoapi/datafusion/utils/wms/index.rst:2
+msgid "datafusion.utils.wms"
+msgstr ""
+
+#: ../../autoapi/index.rst:2
+msgid "API Reference"
+msgstr ""
+
+#: ../../autoapi/index.rst:4
+msgid "This page contains auto-generated API reference documentation [#f1]_."
+msgstr ""
+
+#: ../../autoapi/index.rst:12
+msgid ""
+"Created with `sphinx-autoapi <https://github.com/readthedocs/sphinx-"
+"autoapi>`_"
+msgstr ""
+
+#~ msgid ""
+#~ "__class_vars__: Nazwy zmiennych klasowych "
+#~ "zdefiniowanych na modelu. __private_attributes__:"
+#~ " Metadane prywatnych atrybutów model. "
+#~ "__signature__: Sygnatura modelu."
+#~ msgstr ""
+
+#~ msgid "595fa6eb22e8_initial_version"
+#~ msgstr ""
+
+#~ msgid "initial version"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Revision ID: 595fa6eb22e8 Revises: Create "
+#~ "Date: 2024-10-29 09:17:57.289828"
+#~ msgstr ""
+
+#~ msgid "Attributes"
+#~ msgstr "Atrybuty"
+
+#~ msgid "Functions"
+#~ msgstr "Funkcje"
+
+#~ msgid "Classes"
+#~ msgstr "Klasy"
+
+#~ msgid ""
+#~ ":py:obj:`AddressConfig "
+#~ "<datafusion.configs.address_config.AddressConfig>`\\"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:obj:`pydantic.BaseModel`"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`BDOTConfig <datafusion.configs.bdot_config.BDOTConfig>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`BordersConfig "
+#~ "<datafusion.configs.borders_config.BordersConfig>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`CEEBConfig <datafusion.configs.ceeb_config.CEEBConfig>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.configs.config._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`Config <datafusion.configs.config.Config>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_JSONS_PATH <datafusion.configs.default_paths._JSONS_PATH>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`_CONFIG_YML_PATH "
+#~ "<datafusion.configs.default_paths._CONFIG_YML_PATH>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_jsons_path "
+#~ "<datafusion.configs.default_paths.get_jsons_path>`\\ \\(→ "
+#~ "pathlib.Path\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_config_yml_path "
+#~ "<datafusion.configs.default_paths.get_config_yml_path>`\\ \\(→"
+#~ " pathlib.Path\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`KIUT_URL <datafusion.configs.kiut_config.KIUT_URL>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PolygonizationMethodsConfig_T "
+#~ "<datafusion.configs.kiut_config.PolygonizationMethodsConfig_T>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PolygonizationMethodNames "
+#~ "<datafusion.configs.kiut_config.PolygonizationMethodNames>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`IPolygonizationMethodConfig "
+#~ "<datafusion.configs.kiut_config.IPolygonizationMethodConfig>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`NotBlankMapConfig "
+#~ "<datafusion.configs.kiut_config.NotBlankMapConfig>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AnalyzeColorsOnMapConfig "
+#~ "<datafusion.configs.kiut_config.AnalyzeColorsOnMapConfig>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`WMSConfig <datafusion.configs.kiut_config.WMSConfig>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`KIUTConfig <datafusion.configs.kiut_config.KIUTConfig>`\\"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:obj:`enum.StrEnum`"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:obj:`IPolygonizationMethodConfig`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ReportConfig "
+#~ "<datafusion.configs.report_config.ReportConfig>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`TerytConfig <datafusion.configs.teryt_config.TerytConfig>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`LOCALHOST <datafusion.constants.LOCALHOST>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`TEMP_TABLE_NAME <datafusion.constants.TEMP_TABLE_NAME>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`CONFIG_KEY <datafusion.constants.CONFIG_KEY>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`BDOT_BASE_URL <datafusion.constants.BDOT_BASE_URL>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`POLAND_CS92_SRID <datafusion.constants.POLAND_CS92_SRID>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`BACKGROUND_RGBA <datafusion.constants.BACKGROUND_RGBA>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`BACKGROUND_RGB <datafusion.constants.BACKGROUND_RGB>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`db_settings <datafusion.database.db_settings.db_settings>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`DBSettings <datafusion.database.db_settings.DBSettings>`\\"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:obj:`pydantic_settings.BaseSettings`"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`logger <datafusion.database.initialize.logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`_add_kiut_layers "
+#~ "<datafusion.database.initialize._add_kiut_layers>`\\ \\(→ "
+#~ "None\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`_add_terc_codes "
+#~ "<datafusion.database.initialize._add_terc_codes>`\\ \\(→ "
+#~ "None\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`initialize_kiut_util_database "
+#~ "<datafusion.database.initialize.initialize_kiut_util_database>`\\ "
+#~ "\\(→ None\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AddressPoint "
+#~ "<datafusion.database.models.address_point.AddressPoint>`\\"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:obj:`datafusion.database.models.base_class.Base`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AdministrativeBoundary "
+#~ "<datafusion.database.models.administrative_boundary.AdministrativeBoundary>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`meta <datafusion.database.models.base_class.meta>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`Base <datafusion.database.models.base_class.Base>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`BDOT10k <datafusion.database.models.bdot.BDOT10k>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ImportMetadata "
+#~ "<datafusion.database.models.import_metadata.ImportMetadata>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`KIUTLayer <datafusion.database.models.kiut_layer.KIUTLayer>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`Layer <datafusion.database.models.map.Layer>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`Map <datafusion.database.models.map.Map>`\\"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:obj:`enum.Enum`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`MappingImportToTerc "
+#~ "<datafusion.database.models.mapping_import_to_terc.MappingImportToTerc>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`Terc <datafusion.database.models.terc.Terc>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`Tile <datafusion.database.models.tile.Tile>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_engine <datafusion.database.session._engine>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_session_maker <datafusion.database.session._session_maker>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.database.session._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`SessionContext <datafusion.database.session.SessionContext>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_engine <datafusion.database.session.get_engine>`\\"
+#~ " \\(→ sqlalchemy.engine.Engine\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_session "
+#~ "<datafusion.database.session.get_session>`\\ \\(→ "
+#~ "Iterator\\[sqlalchemy.orm.Session\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`create_schema_if_not_exists "
+#~ "<datafusion.database.session.create_schema_if_not_exists>`\\ "
+#~ "\\(→ None\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`ROOT_DIR <datafusion.ROOT_DIR>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`logger <datafusion.kiut.array_slicer.logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ExistingLayers "
+#~ "<datafusion.kiut.array_slicer.ExistingLayers>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`ArraySlicer <datafusion.kiut.array_slicer.ArraySlicer>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`GeomapRGBAArray "
+#~ "<datafusion.kiut.geomap_array.GeomapRGBAArray>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`logger <datafusion.kiut.import_maps.logger>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_adm_geom_col <datafusion.kiut.import_maps._adm_geom_col>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_adm_tablename <datafusion.kiut.import_maps._adm_tablename>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`SELECT_GRID_STM "
+#~ "<datafusion.kiut.import_maps.SELECT_GRID_STM>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`import_maps "
+#~ "<datafusion.kiut.import_maps.import_maps>`\\ \\(→ None\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`logger <datafusion.kiut.import_tiles.logger>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`Mapping_Type <datafusion.kiut.import_tiles.Mapping_Type>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`_is_blank <datafusion.kiut.import_tiles._is_blank>`\\"
+#~ " \\(→ bool\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`_process_map "
+#~ "<datafusion.kiut.import_tiles._process_map>`\\ \\(→ "
+#~ "Mapping\\_Type\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`import_tiles "
+#~ "<datafusion.kiut.import_tiles.import_tiles>`\\ \\(→ "
+#~ "None\\)"
+#~ msgstr ""
+
+#~ msgid "Function for importing and analyzing KiUT tiles into the database"
+#~ msgstr "Funkcja do importowania i analizowania kafelków KiUT w bazie danych"
+
+#~ msgid ":py:obj:`BACKGROUND_NAME <datafusion.kiut.layers.BACKGROUND_NAME>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`LAYERS_COLORS <datafusion.kiut.layers.LAYERS_COLORS>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`LAYERS_COLORS_LAW "
+#~ "<datafusion.kiut.layers.LAYERS_COLORS_LAW>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AllowedLayerNames "
+#~ "<datafusion.kiut.layers.AllowedLayerNames>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`LayerNames <datafusion.kiut.layers.LayerNames>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`logger <datafusion.kiut.map_analyze.factory.logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`GRID_EXISTENCE_THRESHOLD "
+#~ "<datafusion.kiut.map_analyze.factory.GRID_EXISTENCE_THRESHOLD>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_grid_checker "
+#~ "<datafusion.kiut.map_analyze.factory.get_grid_checker>`\\ "
+#~ "\\(...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`logger "
+#~ "<datafusion.kiut.map_analyze.layer_checkers.check_by_colors.logger>`\\"
+#~ msgstr ""
+
+#~ msgid "Exceptions"
+#~ msgstr "Wyjątki"
+
+#~ msgid ""
+#~ ":py:obj:`CheckByLayerColorError "
+#~ "<datafusion.kiut.map_analyze.layer_checkers.check_by_colors.CheckByLayerColorError>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`CheckByLayerColor "
+#~ "<datafusion.kiut.map_analyze.layer_checkers.check_by_colors.CheckByLayerColor>`\\"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:obj:`Exception`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: "
+#~ ":py:obj:`datafusion.kiut.map_analyze.layer_checkers.interface.LayerChecker`"
+#~ msgstr ""
+
+#~ msgid "THis function is used to determine if a layer exists Args:"
+#~ msgstr "Ta funkcja służy do sprawdzenia czy warstwa istnieje. Argumenty:"
+
+#~ msgid "arr(np.ndarray): Numpy array with input RGBA data"
+#~ msgstr "arr(np.ndarray): Macierz Numpy array z wejściowymi danymi RGBA"
+
+#~ msgid ""
+#~ "Returns dictionary maping layer name to"
+#~ " bool variable representing existence of"
+#~ " given layer"
+#~ msgstr ""
+#~ "Zwraca słownik mapujący nazwę warstwy do"
+#~ " zmiennej logicznej reprezentującej występowanie"
+#~ " danej warstwy"
+
+#~ msgid "This funciton counts pixels in giver layer Args:"
+#~ msgstr "Ta funkcja zlicza piksele w danej wartswie. Argumenty:"
+
+#~ msgid "arr: Numpy array with input RGBA data"
+#~ msgstr "arr: Macirz numpy z danymi wejściowymi RGBA"
+
+#~ msgid "Dict mapping layer name to number of pixels in given layer"
+#~ msgstr "Słownik mapujący nazwę warstwy na liczbę pikseli w danej warstwie"
+
+#~ msgid "This function counts the number of blank pixels Args:"
+#~ msgstr "Ta fukncja zlicza liczbę pustych pikseli Argumenty:"
+
+#~ msgid "arr (np.ndarray): Numpy array with input RGBA data"
+#~ msgstr "arr (np.ndarray): Macierz Numpy z danymi wejściowymi RGBA"
+
+#~ msgid ""
+#~ ":py:obj:`logger "
+#~ "<datafusion.kiut.map_analyze.layer_checkers.check_by_not_blank_pixels.logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`CheckByNotBlankPixels "
+#~ "<datafusion.kiut.map_analyze.layer_checkers.check_by_not_blank_pixels.CheckByNotBlankPixels>`\\"
+#~ msgstr ""
+
+#~ msgid "Gets blank pixels according to the given array. Args:"
+#~ msgstr "Zwraca puste piksele zgodnie z podaną tablicą. Argumenty:"
+
+#~ msgid "arr: (np.ndarray): Array to be checked."
+#~ msgstr "arr: (np.ndarray): Tablica do sprawdzenia."
+
+#~ msgid "np.ndarray: Array with boolean values representing blank pixels."
+#~ msgstr ""
+#~ "np.ndarray: Tablica z wartościami logicznymi"
+#~ " reprezentującymi puste piksele."
+
+#~ msgid ""
+#~ ":py:obj:`ExistingLayers "
+#~ "<datafusion.kiut.map_analyze.layer_checkers.interface.ExistingLayers>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`LayerChecker_T "
+#~ "<datafusion.kiut.map_analyze.layer_checkers.interface.LayerChecker_T>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`LayerChecker "
+#~ "<datafusion.kiut.map_analyze.layer_checkers.interface.LayerChecker>`\\"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:obj:`abc.ABC`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ADDR_POINTS_UPDATE_PROCEDURE_NAME "
+#~ "<datafusion.prg.address_points_procedures.ADDR_POINTS_UPDATE_PROCEDURE_NAME>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`CREATE_ADDR_POINTS_UPDATE_PROC "
+#~ "<datafusion.prg.address_points_procedures.CREATE_ADDR_POINTS_UPDATE_PROC>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.readers.address_reader._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AddressReader "
+#~ "<datafusion.readers.address_reader.AddressReader>`\\"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:obj:`datafusion.readers.base_reader.Reader`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Private implementation of function to "
+#~ "import address points to database."
+#~ msgstr ""
+#~ "Prywatna implementacja fukcji do zapisywania"
+#~ " punktów adresowych w bazie danych"
+
+#~ msgid "Functino that adds address points to database."
+#~ msgstr "Funkcja która dodaje punkty adresowe do bazy danych."
+
+#~ msgid ""
+#~ "This functino is responsible for adding"
+#~ " address points to database. Args:"
+#~ msgstr ""
+#~ "Ta funkcja jest opdowiedzialna za zapis"
+#~ " punktów adresowych do bazy danych. "
+#~ "Argumenty:"
+
+#~ msgid ""
+#~ "db (Session): Database session import_id "
+#~ "(int): Import ID raw_table (Table): Raw"
+#~ " table geometry_column_name (str): Column "
+#~ "name of geometry column"
+#~ msgstr ""
+#~ "db (Session): Sesja bazy danych "
+#~ "import_id (int): Identyfikator importu "
+#~ "raw_table (Table): Surowa tabela "
+#~ "geometry_column_name (str): Nazwa kolumny "
+#~ "kolumny geometrii"
+
+#~ msgid "Function that imports address points to database. Args:"
+#~ msgstr "Funkcja importująca punkty adresowe do bazy danych. Argumenty:"
+
+#~ msgid "remove_staging_table: if True, will remove staging table from database"
+#~ msgstr "remove_staging_table: jeśli `True`, usunie tabelę staging z bazy danych"
+
+#~ msgid "This functino imports raw data to staging table."
+#~ msgstr "Ta funkcja importuje surowe dane do tabeli staging."
+
+#~ msgid "Import data from zip file. Args:"
+#~ msgstr "Importuj dane z pliku zip. Argumenty:"
+
+#~ msgid ""
+#~ "source (IO[bytes]): Zip file IO beats"
+#~ " object ogr (OgrCaller): OGR caller "
+#~ "object"
+#~ msgstr ""
+#~ "source (IO[bytes]): Obiekt bajtów pliku "
+#~ "zip IO ogr (OgrCaller): Obiekt "
+#~ "wywołujący OGR"
+
+#~ msgid "tmpdir (str): Temporary directory"
+#~ msgstr "tmpdir (str): Katalog tymczasowy"
+
+#~ msgid ""
+#~ ":py:obj:`_ALLOWED_CONFIGS_T "
+#~ "<datafusion.readers.base_reader._ALLOWED_CONFIGS_T>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`Reader <datafusion.readers.base_reader.Reader>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.readers.bdot_reader._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`BDOTReader <datafusion.readers.bdot_reader.BDOTReader>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.readers.borders_reader._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`BordersReader "
+#~ "<datafusion.readers.borders_reader.BordersReader>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is responsible for "
+#~ "importing borders from Państwowy Rejestr "
+#~ "Granic on the gmina level. Args:"
+#~ msgstr ""
+#~ "Funkcja ta odpowiada za import granic"
+#~ " z Państwowego Rejestru Granic na "
+#~ "poziomie gminy. Argumenty:"
+
+#~ msgid ""
+#~ "remove_staging_table (bool, optional): Flag to"
+#~ " remove staging table from database. "
+#~ "Defaults to False."
+#~ msgstr ""
+#~ "remove_staging_table (bool, opcjonalnie): Flaga "
+#~ "do usunięcia tabeli tymczasowej z bazy"
+#~ " danych. Domyślnie False."
+
+#~ msgid "This functino import raw data from Państwowy Rejestr Granic. Args:"
+#~ msgstr ""
+#~ "Funkcja ta importuje surowe dane z "
+#~ "Państwowego Rejestru Granic. Argumenty:"
+
+#~ msgid ""
+#~ "url (str): URL for the open data"
+#~ " source table_name (str): Name of the"
+#~ " table to which the data will "
+#~ "be imported. table_schema (str): Name of"
+#~ " the table to which the data "
+#~ "will be imported. tmp_dir_root (str): "
+#~ "Path to the temporary directory. "
+#~ "layer_name (str): Name of the layer "
+#~ "frow which the data will be "
+#~ "imported. wfs_version (str): WFS version "
+#~ "of the WFS service timeout (int): "
+#~ "Timeout in seconds."
+#~ msgstr ""
+#~ "url (str): URL do otwartego źródła "
+#~ "danych table_name (str): Nazwa tabeli, "
+#~ "do której dane będą importowane. "
+#~ "table_schema (str): Nazwa schematu tabeli, "
+#~ "do której dane będą importowane. "
+#~ "tmp_dir_root (str): Ścieżka do katalogu "
+#~ "tymczasowego. layer_name (str): Nazwa warstwy,"
+#~ " z której dane będą importowane. "
+#~ "wfs_version (str): Wersja WFS usługi WFS"
+#~ " timeout (int): Czas oczekiwania w "
+#~ "sekundach."
+
+#~ msgid "This function performs boundaries normalization Args:"
+#~ msgstr "Funkcja ta normalizuje granice. Argumenty:"
+
+#~ msgid ""
+#~ "db (Session): Database session object. "
+#~ "raw_table (Table): Raw table to process."
+#~ " import_id (int): Id of the imported"
+#~ " boundaries."
+#~ msgstr ""
+#~ "db (Session): Obiekt sesji bazy danych."
+#~ " raw_table (Table): Surowa tabela do "
+#~ "przetworzenia. import_id (int): Id granic "
+#~ "importowanych."
+
+#~ msgid ":py:obj:`_logger <datafusion.readers.ceeb_reader._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`CEEBReader <datafusion.readers.ceeb_reader.CEEBReader>`\\"
+#~ msgstr ""
+
+#~ msgid "Retrieves the import ID for the current CEEB import session."
+#~ msgstr "Pobiera identyfikator importu dla bieżącej sesji importu CEEB."
+
+#~ msgid "int: The import ID for the current import session."
+#~ msgstr "int: Identyfikator importu dla bieżącej sesji importu."
+
+#~ msgid ""
+#~ "Processes a single data file, validates"
+#~ " its schema, and saves it to "
+#~ "the database."
+#~ msgstr ""
+#~ "Przetwarza pojedynczy plik danych, waliduje"
+#~ " jego schemat i zapisuje go do "
+#~ "bazy danych."
+
+#~ msgid ""
+#~ "This method reads a CSV file from"
+#~ " the specified path, validates its "
+#~ "structure against the expected schema, "
+#~ "adds metadata columns, and saves the "
+#~ "DataFrame to the corresponding database "
+#~ "table."
+#~ msgstr ""
+#~ "Ta metoda odczytuje plik CSV z "
+#~ "określonej ścieżki, waliduje jego strukturę"
+#~ " względem oczekiwanego schematu, dodaje "
+#~ "kolumny metadanych i zapisuje DataFrame "
+#~ "do odpowiadającej tabeli bazy danych."
+
+#~ msgid ""
+#~ "file_path (str): The file path of "
+#~ "the CSV data to process. table_name "
+#~ "(str): The name of the database "
+#~ "table where data will be saved."
+#~ msgstr ""
+#~ "file_path (str): Ścieżka pliku danych "
+#~ "CSV do przetworzenia. table_name (str): "
+#~ "Nazwa tabeli bazy danych, do której "
+#~ "dane będą zapisane."
+
+#~ msgid "ValueError: If the DataFrame does not conform to the expected schema."
+#~ msgstr "ValueError: Jeśli DataFrame nie spełnia oczekiwanego schematu."
+
+#~ msgid "Saves a DataFrame to the specified database table."
+#~ msgstr "Zapisuje DataFrame do określonej tabeli bazy danych."
+
+#~ msgid ""
+#~ "df (pd.DataFrame): The DataFrame to "
+#~ "save. table_name (str): The name of "
+#~ "the table to save data into."
+#~ msgstr ""
+#~ "df (pd.DataFrame): DataFrame do zapisania. "
+#~ "table_name (str): Nazwa tabeli, do "
+#~ "której dane będą zapisane."
+
+#~ msgid ":py:obj:`logger <datafusion.readers.kiut_reader.logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DEFAULT_LAYERS "
+#~ "<datafusion.readers.kiut_reader.DEFAULT_LAYERS>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`KIUTReader <datafusion.readers.kiut_reader.KIUTReader>`\\"
+#~ msgstr ""
+
+#~ msgid "This function runs the KIUT reader process. Args:"
+#~ msgstr "Ta funkcja uruchamia proces czytnika KIUT. Argumenty:"
+
+#~ msgid "layer_name (str): layer name to import"
+#~ msgstr "layer_name (str): nazwa warstwy do importu"
+
+#~ msgid ""
+#~ ":py:obj:`POW_UZYTKOWA_OGRZEWANA "
+#~ "<datafusion.report.constants.POW_UZYTKOWA_OGRZEWANA>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`BUD_UWZGLEDNIANY_POWYZEJ "
+#~ "<datafusion.report.constants.BUD_UWZGLEDNIANY_POWYZEJ>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`POW_POWYZEJ <datafusion.report.constants.POW_POWYZEJ>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`POW_UZYT_OGRZ_PARTERU_Z_WYLACZENIEM "
+#~ "<datafusion.report.constants.POW_UZYT_OGRZ_PARTERU_Z_WYLACZENIEM>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PODL_DO_GAZ_I_SYSTEM_GS "
+#~ "<datafusion.report.constants.PODL_DO_GAZ_I_SYSTEM_GS>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`TYLKO_PODL_DO_GAZU_G "
+#~ "<datafusion.report.constants.TYLKO_PODL_DO_GAZU_G>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`TYLKO_PODL_DO_SYSTEM_S "
+#~ "<datafusion.report.constants.TYLKO_PODL_DO_SYSTEM_S>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`POZA_PODL_DO_SIECI_GAZ_I_CIEP_N "
+#~ "<datafusion.report.constants.POZA_PODL_DO_SIECI_GAZ_I_CIEP_N>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`WSPOLCZYNNIK_POWIERZCHNI_UZYTKOWEJ_DO_POWIERZCHNI_ZABUDOWY"
+#~ " "
+#~ "<datafusion.report.constants.WSPOLCZYNNIK_POWIERZCHNI_UZYTKOWEJ_DO_POWIERZCHNI_ZABUDOWY>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PROCENT_POWIERZCHNI_OGRZEWANYCH_BUDYNKOW "
+#~ "<datafusion.report.constants.PROCENT_POWIERZCHNI_OGRZEWANYCH_BUDYNKOW>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`FUNKCJA_OGOLNA <datafusion.report.constants.FUNKCJA_OGOLNA>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`FUNKCJA_SZCZEGOLOWA "
+#~ "<datafusion.report.constants.FUNKCJA_SZCZEGOLOWA>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`FUNKCJA_SZCZEGOLOWA_1 "
+#~ "<datafusion.report.constants.FUNKCJA_SZCZEGOLOWA_1>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`FUNKCJA_SZCZEGOLOWA_2 "
+#~ "<datafusion.report.constants.FUNKCJA_SZCZEGOLOWA_2>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`FUNKCJA_SZCZEGOLOWA_3 "
+#~ "<datafusion.report.constants.FUNKCJA_SZCZEGOLOWA_3>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`QUERY_POW_OBRYSU_M2 "
+#~ "<datafusion.report.constants.QUERY_POW_OBRYSU_M2>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`QUERY_LICZBA_KONDYGNACJI "
+#~ "<datafusion.report.constants.QUERY_LICZBA_KONDYGNACJI>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`QUERY_GAS_DISTANCE "
+#~ "<datafusion.report.constants.QUERY_GAS_DISTANCE>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`QUERY_HEAT_DISTANCE "
+#~ "<datafusion.report.constants.QUERY_HEAT_DISTANCE>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`M2_MIN_DO_SIECI "
+#~ "<datafusion.report.constants.M2_MIN_DO_SIECI>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ODLEGLOSC_OD_SIECI "
+#~ "<datafusion.report.constants.ODLEGLOSC_OD_SIECI>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`MIN_POW_ZABUD <datafusion.report.constants.MIN_POW_ZABUD>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`CZY_OGRZEWANY <datafusion.report.constants.CZY_OGRZEWANY>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`NAZWA_PARAMETRU "
+#~ "<datafusion.report.constants.NAZWA_PARAMETRU>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ZALEZNE_OD_FUNKCJI_SZCZEGOLOWEJ "
+#~ "<datafusion.report.constants.ZALEZNE_OD_FUNKCJI_SZCZEGOLOWEJ>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ZALEZNE_OD_FUNKCJI_OGOLNEJ "
+#~ "<datafusion.report.constants.ZALEZNE_OD_FUNKCJI_OGOLNEJ>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`PARAMETRY <datafusion.report.constants.PARAMETRY>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.report.report._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`ReportError <datafusion.report.report.ReportError>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`Report <datafusion.report.report.Report>`\\"
+#~ msgstr ""
+
+#~ msgid "Return nth element from list or return none if out of range"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`_BUILDING_PARAMETERS_PATH "
+#~ "<datafusion.report.utils._BUILDING_PARAMETERS_PATH>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_building_parameters_path "
+#~ "<datafusion.report.utils.get_building_parameters_path>`\\ \\(→"
+#~ " pathlib.Path\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.runners.address_runner._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`address_runner "
+#~ "<datafusion.runners.address_runner.address_runner>`\\ "
+#~ "\\(config\\_path\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`address_runner_cli "
+#~ "<datafusion.runners.address_runner.address_runner_cli>`\\ \\(→"
+#~ " None\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.runners.bdot_runner._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`run <datafusion.runners.bdot_runner.run>`\\ \\(→ None\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`bdot_runner_cli "
+#~ "<datafusion.runners.bdot_runner.bdot_runner_cli>`\\ \\(→ "
+#~ "None\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.runners.borders_runner._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`import_borders "
+#~ "<datafusion.runners.borders_runner.import_borders>`\\ \\(→ "
+#~ "None\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`import_borders_cli "
+#~ "<datafusion.runners.borders_runner.import_borders_cli>`\\ \\(→"
+#~ " None\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.runners.ceeb_runner._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ceeb_runner "
+#~ "<datafusion.runners.ceeb_runner.ceeb_runner>`\\ \\(→ "
+#~ "None\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ceeb_runner_cli "
+#~ "<datafusion.runners.ceeb_runner.ceeb_runner_cli>`\\ \\(→ "
+#~ "None\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.runners.kiut_runner._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`run_kiut <datafusion.runners.kiut_runner.run_kiut>`\\"
+#~ " \\(→ None\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`kiut_runner_cli "
+#~ "<datafusion.runners.kiut_runner.kiut_runner_cli>`\\ \\(→ "
+#~ "None\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.runners.report_runner._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`run_report "
+#~ "<datafusion.runners.report_runner.run_report>`\\ \\(→ "
+#~ "None\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`run_report_cli "
+#~ "<datafusion.runners.report_runner.run_report_cli>`\\ \\(→ "
+#~ "None\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`import_terc_codes "
+#~ "<datafusion.teryt_codes.teryt_codes.import_terc_codes>`\\ \\(→"
+#~ " None\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`create_import_metadata "
+#~ "<datafusion.utils.crud.create_import_metadata>`\\ \\(...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`create_import_to_terc_mapping "
+#~ "<datafusion.utils.crud.create_import_to_terc_mapping>`\\ "
+#~ "\\(...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_kiut_layer_by_name "
+#~ "<datafusion.utils.crud.get_kiut_layer_by_name>`\\ \\(...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_kiut_layer_name_to_id_dict "
+#~ "<datafusion.utils.crud.get_kiut_layer_name_to_id_dict>`\\ \\(→"
+#~ " dict\\[str\\, int\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DEFAULT_TRANSPARENT_THRESHOLD "
+#~ "<datafusion.utils.image.color.DEFAULT_TRANSPARENT_THRESHOLD>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DEFAULT_WHITE_THRESHOLD "
+#~ "<datafusion.utils.image.color.DEFAULT_WHITE_THRESHOLD>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`is_white <datafusion.utils.image.color.is_white>`\\ "
+#~ "\\(→ bool\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`is_transparent "
+#~ "<datafusion.utils.image.color.is_transparent>`\\ \\(→ "
+#~ "numpy.ndarray\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`is_background "
+#~ "<datafusion.utils.image.color.is_background>`\\ \\(→ "
+#~ "numpy.ndarray\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_euklidesian_distance "
+#~ "<datafusion.utils.image.distance.get_euklidesian_distance>`\\ "
+#~ "\\(arr\\, rgba\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_redmean_distance "
+#~ "<datafusion.utils.image.distance.get_redmean_distance>`\\ "
+#~ "\\(arr\\, rgba\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_max_distance "
+#~ "<datafusion.utils.image.distance.get_max_distance>`\\ \\(arr\\,"
+#~ " rgba\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`normalize_rgba_array "
+#~ "<datafusion.utils.image.normalization.normalize_rgba_array>`\\ "
+#~ "\\(→ numpy.ndarray\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`normalize_image "
+#~ "<datafusion.utils.image.normalization.normalize_image>`\\ "
+#~ "\\(image\\[\\, layer\\_to\\_color\\, max\\_error\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`image_to_bytes "
+#~ "<datafusion.utils.image.serialize.image_to_bytes>`\\ \\(→ "
+#~ "bytes\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.utils.ogr._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`OgrCaller <datafusion.utils.ogr.OgrCaller>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.utils.remote._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_content_from_remote "
+#~ "<datafusion.utils.remote.get_content_from_remote>`\\ \\(url\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setup_logging "
+#~ "<datafusion.utils.setup_logging.setup_logging>`\\ \\(→ "
+#~ "None\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_logger <datafusion.utils.sql._logger>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`build_json_column "
+#~ "<datafusion.utils.sql.build_json_column>`\\ \\(→ "
+#~ "sqlalchemy.sql.elements.Label\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`build_insert <datafusion.utils.sql.build_insert>`\\ "
+#~ "\\(→ sqlalchemy.dialects.postgresql.Insert\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`create_procedure "
+#~ "<datafusion.utils.sql.create_procedure>`\\ \\(→ None\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`call_procedure <datafusion.utils.sql.call_procedure>`\\"
+#~ " \\(→ None\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`RGBA_T <datafusion.utils.typings.RGBA_T>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`RGB_T <datafusion.utils.typings.RGB_T>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`LayernameToId_DictT "
+#~ "<datafusion.utils.typings.LayernameToId_DictT>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`TRUE_VALUES <datafusion.utils.utils.TRUE_VALUES>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`FALSE_VALUES <datafusion.utils.utils.FALSE_VALUES>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`EXPECTED_CEEB_DATA_SCHEMA "
+#~ "<datafusion.utils.utils.EXPECTED_CEEB_DATA_SCHEMA>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`read_json <datafusion.utils.utils.read_json>`\\ "
+#~ "\\(→ dict\\[str\\, str\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`validate_dataframe_by_schema "
+#~ "<datafusion.utils.utils.validate_dataframe_by_schema>`\\ \\(→"
+#~ " None\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`logger <datafusion.utils.wms.logger>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`MAX_RETRIES <datafusion.utils.wms.MAX_RETRIES>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`WAIT_MS <datafusion.utils.wms.WAIT_MS>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`TIMEOUT <datafusion.utils.wms.TIMEOUT>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`Bbox_T <datafusion.utils.wms.Bbox_T>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`WebMapServiceBulk <datafusion.utils.wms.WebMapServiceBulk>`\\"
+#~ msgstr ""
+
+#~ msgid "dd58762d2ce8_add_building_report_procedure"
+#~ msgstr ""
+
+#~ msgid "add building report procedure"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Revision ID: dd58762d2ce8 Revises: "
+#~ "09498fff9fa5 Create Date: 2024-10-28 "
+#~ "16:28:42.027786"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`revision "
+#~ "<dd58762d2ce8_add_building_report_procedure.revision>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`down_revision "
+#~ "<dd58762d2ce8_add_building_report_procedure.down_revision>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`branch_labels "
+#~ "<dd58762d2ce8_add_building_report_procedure.branch_labels>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`depends_on "
+#~ "<dd58762d2ce8_add_building_report_procedure.depends_on>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`upgrade "
+#~ "<dd58762d2ce8_add_building_report_procedure.upgrade>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`downgrade "
+#~ "<dd58762d2ce8_add_building_report_procedure.downgrade>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "env"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`config <env.config>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`target_metadata <env.target_metadata>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`url <env.url>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`excluded_tables <env.excluded_tables>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`include_object <env.include_object>`\\ \\(→ bool\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`run_migrations_offline <env.run_migrations_offline>`\\"
+#~ " \\(→ None\\)"
+#~ msgstr ""
+
+#~ msgid "Run migrations in 'offline' mode."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`run_migrations_online <env.run_migrations_online>`\\"
+#~ " \\(→ None\\)"
+#~ msgstr ""
+
+#~ msgid "Run migrations in 'online' mode."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This configures the context with just"
+#~ " a URL and not an Engine, "
+#~ "though an Engine is acceptable here "
+#~ "as well.  By skipping the Engine "
+#~ "creation we don't even need a "
+#~ "DBAPI to be available."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Calls to context.execute() here emit the"
+#~ " given string to the script output."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In this scenario we need to create"
+#~ " an Engine and associate a connection"
+#~ " with the context."
+#~ msgstr ""
+
+#~ msgid "datafusion.configs.teryt_config"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "db (Session): Sqlalchemy database session "
+#~ "instance import_id (int): Import ID "
+#~ "based on metadata checker (LayerChecker): "
+#~ "Instance of LayerChecker slicer(ArraySlicer): "
+#~ "Instance of ArraySlicer: srid (int): "
+#~ "srid used in POSTGIS geometry:"
+#~ msgstr ""
+#~ "db (Sesja): Instancja sesji bazy danych"
+#~ " Sqlalchemy import_id (int): Identyfikator "
+#~ "importu oparty na kontrolerze metadanych "
+#~ "(LayerChecker): Instancja LayerChecker "
+#~ "slicer(ArraySlicer): Instancja ArraySlicer: srid "
+#~ "(int): srid używany w geometrii POSTGIS:"
+
+#~ msgid "datafusion.report.constants"
+#~ msgstr ""
+
+#~ msgid "datafusion.report"
+#~ msgstr ""
+
+#~ msgid "datafusion.report.report"
+#~ msgstr ""
+
+#~ msgid "datafusion.report.utils"
+#~ msgstr ""
+

@@ -1,0 +1,8 @@
+{
+    "nr_powiatu": "1863",
+    "nr_wojewodztwa": "18",
+    "layer_name": "OT_BUBD_A",
+    "tmp_table_name": "bdot10k",
+    "tmp_table_schema": "tmp",
+    "geom_col_name": "geometria"
+}

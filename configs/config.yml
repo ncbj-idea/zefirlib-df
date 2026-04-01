@@ -1,0 +1,19 @@
+# Main Configuration File
+# This file imports all sub-configurations for the DataFusion system
+
+# Global configuration (TERC code, etc.)
+global: !include global.yml
+
+# Data source configurations
+bdot: !include data_sources/bdot.yml
+borders: !include data_sources/borders.yml
+kiut: !include data_sources/kiut.yml
+ceeb: !include data_sources/ceeb.yml
+address: !include data_sources/address.yml
+pvgis: !include data_sources/pvgis.yml
+
+# Processing configurations
+merge_config: !include processing/merge_config.yml
+
+# Postprocessing configurations
+postprocessing: !include postprocessing.yml

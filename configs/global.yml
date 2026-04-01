@@ -1,0 +1,6 @@
+# Global configuration
+# 'Numer TERC (Terytorialny Elektroniczny Rejestr Jednostek Terytorialnych) -
+# kod identyfikacyjny jednostki terytorialnej w Polsce'
+# 'TERC (Territorial Electronic Register of Territorial Units) number -
+# identification code of territorial unit in Poland'
+terc: "0207011" # Kamienna Góra

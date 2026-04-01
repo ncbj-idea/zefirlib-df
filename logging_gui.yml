@@ -1,0 +1,20 @@
+# GUI logging config with short format
+version: 1
+formatters:
+  short:
+    format: "%(asctime)s: %(message)s"
+    datefmt: "%H:%M:%S"
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: short
+    stream: ext://sys.stdout
+loggers:
+  datafusion:
+    level: INFO
+    handlers: [console]
+    propagate: no
+
+root:
+  handlers: [console]
+  level: DEBUG

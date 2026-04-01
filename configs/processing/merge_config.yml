@@ -1,0 +1,49 @@
+# CEEB BDOT merge config
+# 'TERC number is now defined globally at the top of this config file'
+h3_resolution: 8
+gini_in_topsis: FALSE
+gini_lorenz: FALSE
+gini_method: "trapz"
+classification_method: "topsis"
+coord_system: "EPSG:2180"
+complex_distance: 10
+string_max_distance: 0.1
+string_param: 1
+string_method: "cosine"
+heat_threshold: 0.5
+heat_development: "h3" # "h3", "none", "distance"
+expanded_logs: TRUE
+trash_treshold: 0.25
+avg_flat: 68.3
+gus_multiplicator: 1
+
+# Include sub-configurations
+ceeb_params: !include merge_params/ceeb_params.yml
+bdot_params: !include merge_params/bdot_params.yml
+joining_params: !include merge_params/joining_params.yml
+
+# building_factors:
+#   non_living: 0.9
+#   gus_living_correction: 1
+#   gus_living_size: 5555
+#
+#
+# seeds:
+#   imputation: 135
+#   operat: 589
+#   termo: 845
+#   lasso: 987
+#   h3: 789
+#
+# efficiency:
+#   electric_heater:
+#     - 0.95
+#     - 0.1
+#   heat_pump: 3
+#
+# stratification:
+#   zabytek: 0
+#   wiek: 0
+
+default:
+  config_req: 11

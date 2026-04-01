@@ -1,0 +1,19 @@
+# Borders (Administrative Boundaries) Configuration
+# 'URL usługi WFS dla granic administracyjnych'
+# 'WFS service URL for administrative boundaries'
+url: https://mapy.geoportal.gov.pl/wss/service/PZGIK/PRG/WFS/AdministrativeBoundaries
+# 'Nazwa warstwy granic administracyjnych'
+# 'Name of the administrative boundaries layer'
+layer_name: A05_Granice_jednostek_ewidencyjnych
+# 'Tymczasowa nazwa tabeli dla granic administracyjnych'
+# 'Temporary table name for administrative boundaries'
+tmp_table_name: tmp_administative_boundaries
+# 'Wersja protokołu WFS używanego do pobierania danych'
+# 'WFS protocol version used for data retrieval'
+wfs_version: 1.1.0
+# 'Czas oczekiwania na odpowiedź z serwera (w sekundach)'
+# 'Timeout for server response (in seconds)'
+timeout: 600
+# 'Schemat bazy danych dla tymczasowych tabel granic'
+# 'Database schema for temporary tables of boundaries'
+tmp_table_schema: tmp

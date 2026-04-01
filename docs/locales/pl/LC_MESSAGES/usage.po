@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, IDEA - Narodowe Centrum Badań Jądrowych
+# This file is distributed under the same license as the PR_2024_4 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PR_2024_4 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-18 14:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pl\n"
+"Language-Team: pl <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../usage.rst:2
+msgid "How to use?"
+msgstr "Jak używać?"
+
+#: ../../usage.rst:4
+#, fuzzy
+msgid "You can use the command line interface (CLI) to run `datafusion`."
+msgstr ""
+"Możesz użyć następującej komendy wiersza linii poleceń (CLI) aby "
+"uruchomić `datafusion`"
+
+#: ../../usage.rst:6
+msgid ""
+"To import data into your database, run the following commands in the "
+"specified order:"
+msgstr ""
+"Aby zaimportować dane do twojej bazy danycych, wykonaj następujące "
+"komendy w określonej kolejności:"
+
+#: ../../usage.rst:8
+#, fuzzy
+msgid ""
+"Load data from the Topographic Objects Database (`source "
+"<https://www.geoportal.gov.pl/pl/dane/baza-danych-obiektow-"
+"topograficznech-bdot10k/>`_):"
+msgstr ""
+"Załaduj dane z bazy danych obiektów topograficznych "
+"([source](https://www.geoportal.gov.pl/pl/dane/baza-danych-obiektow-"
+"topograficznech-bdot10k/))"
+
+#: ../../usage.rst:15
+#, fuzzy
+msgid ""
+"Load data from the Administrative Boundaries - part of the State Register"
+" of Boundaries (`source <https://www.geoportal.gov.pl/pl/dane/panstwowy-"
+"rejestr-granic-prg/>`_):"
+msgstr ""
+"Załaduj dane granic jednostek administracjnych z Państwowego Rejestru "
+"Granic of Boundaries ([source](https://www.geoportal.gov.pl/pl/dane"
+"/panstwowy-rejestr-granic-prg/)) "
+
+#: ../../usage.rst:22
+#, fuzzy
+msgid ""
+"Load data from the Terrain Utilities Network (`source "
+"<https://www.geoportal.gov.pl/pl/dane/uzbrojenie-terenu-gesut/>`_):"
+msgstr ""
+"Załaduj dane z bazy danych uzbrojenia terenu "
+"([source](https://www.geoportal.gov.pl/pl/dane/uzbrojenie-terenu-gesut/))"
+
+#: ../../usage.rst:29
+#, fuzzy
+msgid ""
+"Load data from a xlsx file prepared by the user, which contains heating "
+"data (`source <https://www.gunb.gov.pl/podmenu/1713>`_):"
+msgstr ""
+"Załaduj dane z pliku xlsx przygotowanego przez użytkownika, które zawiera"
+" dane o ogrzewnictwiedata "
+"([source](https://www.gunb.gov.pl/podmenu/1713)) "
+
+#: ../../usage.rst:36
+#, fuzzy
+msgid ""
+"Load data from the National Register of Borders (`source "
+"<https://www.geoportal.gov.pl/pl/dane/panstwowy-rejestr-granic-prg/>`_):"
+msgstr ""
+"Załaduj dane z Państwowegu Rejestru Granic "
+"([source](https://www.geoportal.gov.pl/pl/dane/panstwowy-rejestr-granic-"
+"prg/))"
+
+#: ../../usage.rst:45
+#, fuzzy
+msgid ""
+"Running commands in a different order may cause errors. Each script may "
+"depend on the previous one. Load data from PVGIS database .. code-block::"
+" bash"
+msgstr ""
+"Uruchamianie komend w innej kolejności może powodować błędy. Każdy skrypt "
+"może zależeć od poprzedniego. Załaduj dane z bazy PVGIS .. code-block:: bash"
+
+#: ../../usage.rst:49
+msgid "pvgis -c config.yml"
+msgstr "pvgis -c config.yml"
+
+#: ../../usage.rst:50
+msgid ""
+"Merge procedure from PVGIS database and Address database .. code-block:: "
+"bash"
+msgstr ""
+"Procedura scalania danych z bazy PVGIS i bazy adresowej .. code-block:: bash"
+
+#: ../../usage.rst:53
+msgid "pvgis_merger -c config.yml"
+msgstr "pvgis_merger -c config.yml"
+
+#~ msgid "```"
+#~ msgstr "```"
+
+#~ msgid "Command Line Interface"
+#~ msgstr "Interfejs wiersza poleceń"
+

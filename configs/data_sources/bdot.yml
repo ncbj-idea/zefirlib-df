@@ -1,0 +1,15 @@
+# BDOT (Building Database) Configuration
+# 'TERC number is now defined globally at the top of this config file'
+# 'County and voivodeship numbers are automatically extracted from the global TERC'
+# 'Nazwa warstwy, która jest używana w systemie GIS'
+# 'The name of the layer used in the GIS system'
+layer_name: OT_BUBD_A
+# 'Tymczasowa nazwa tabeli w bazie danych'
+# 'Temporary name of the table in the database'
+tmp_table_name: bdot10k
+# 'Schemat bazy danych dla tymczasowych tabel'
+# 'Database schema for temporary tables'
+tmp_table_schema: tmp
+# 'Nazwa kolumny geometrii w tabeli (e.g: wkt_geometry, geometry)'
+# 'The name of the geometry column in the table'
+geom_col_name: geometria

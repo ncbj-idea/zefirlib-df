@@ -1,0 +1,8 @@
+{
+  "teryt": "02",
+  "url": "https://opendata.geoportal.gov.pl/prg/adresy/",
+  "layer_name": "PRG_PunktAdresowy",
+  "tmp_table_name": "tmp_address_point_02",
+  "tmp_table_schema": "tmp",
+  "geometry_column_name": "pozycja"
+}

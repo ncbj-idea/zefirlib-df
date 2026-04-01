@@ -1,0 +1,39 @@
+# CEEB Parameters for Merge Configuration
+ceeb_merger:
+  - "Typ_deklaracji"
+  - "ulica"
+  - "numer_porzadkowy"
+ceeb_boiler:
+  - "Kocioł na paliwo stałe (węgiel, drewno, pellet lub inny rodzaj biomasy) z ręcznym podawaniem paliwa / zasypowy"
+  - "Kocioł na paliwo stałe (węgiel, drewno, pellet lub inny rodzaj biomasy) z automatycznym podawaniem paliwa / z podajnikiem"
+ceeb_summary:
+  - "Typ_deklaracji"
+  - "ulica"
+  - "numer_porzadkowy"
+  - "Klasa_kotła"
+ceeb_living:
+  - "A"
+ceeb_non_living:
+  - "B"
+ceeb_diverge: "Numer_domu"
+ceeb_important_col:
+  - "Typ_deklaracji"
+  - "ulica"
+  - "numer_porzadkowy"
+  - "Źródło_ciepła"
+ceeb_device_col: "Źródło_ciepła"
+ceeb_street_col: "Ulica"
+ceeb_number_col: "Numer_budynku"
+ceeb_class_col: "Klasa_kotła"
+ceeb_declare_col: "Typ_deklaracji"
+ceeb_eksp_col: "Liczba_eksploatowanych_źródeł_ciepła_-_suma"
+ceeb_nmb_col: "Liczba_zainstalowanych_źródeł_ciepła_-_suma"
+ceeb_lokal_col: "Numer_lokalu"
+ceeb_cwu: "C.W.U."
+ceeb_co: "C.O."
+ind_var:
+  - "Poniżej_klasy_3_lub_brak_informacji"
+  - "Klasa_3"
+  - "Klasa_4"
+  - "Klasa_5"
+  - "Ekoprojekt"

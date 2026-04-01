@@ -1,0 +1,6 @@
+{
+  "terc": "2212011",
+  "ceeb_devices_file_path": "airflow_input/ceeb_devices.csv",
+  "ceeb_class_file_path": "airflow_input/ceeb_classes.csv",
+  "tmp_table_schema": "tmp"
+}

@@ -1,0 +1,99 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datafusion"
+version = "0.1.0"
+authors = [{ name = "IDEA NCBJ", email = "office@idea.edu.pl" }]
+description = "Tool for integrating climate data"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = ["Programming Language :: Python :: 3.12"]
+dependencies = [
+    "alembic~=1.13.2",
+    "apache-airflow==2.10.1",
+    "geoalchemy2~=0.15.2",
+    "geopandas",
+    "h3~=4.3.0",
+    "numpy~=1.26.4",
+    "openpyxl==3.1.5",
+    "owslib",
+    "pandas~=2.1.4",
+    "pillow",
+    "psycopg2-binary~=2.9.9",
+    "pydantic-settings~=2.4.0",
+    "pydantic~=2.8.2",
+    "RapidFuzz~=3.14.1",
+    "requests~=2.32.3",
+    "retrying",
+    "statsmodels",
+    "sqlalchemy_json~=0.7.0",
+    "sqlalchemy~=1.4.53",
+    "scipy~=1.16.0",
+    "pyside6>=6.10.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "types-PyYAML",
+    "types-requests",
+    "pytest==8.3.3",
+    #    "docker==7.1.0",
+    "pytest-cov~=5.0.0",
+    "pytest-xdist~=3.5.0",
+    "ruff>=0.15.0",
+]
+
+docs = [
+    "sphinx",
+    #    "sphinx-intl",
+    "sphinx_rtd_theme",
+    "sphinxcontrib-napoleon",
+    "sphinx-autoapi",
+    "sphinxcontrib-httpdomain",
+    "sphinxcontrib-openapi",
+    "sphinxcontrib-redoc",
+    #    #"sphinxcontrib-sqlalchemy",
+    "sphinxcontrib-sadisplay",
+    "sphinxcontrib-images",
+    "sphinxcontrib-plantuml",
+    "myst-parser",
+    "sphinx_book_theme",
+]
+
+[project.scripts]
+bdot = "datafusion.runners.bdot_runner:bdot_runner_cli"
+kiut = "datafusion.runners.kiut_runner:kiut_runner_cli"
+ceeb = "datafusion.runners.ceeb_runner:ceeb_runner_cli"
+borders = "datafusion.runners.borders_runner:import_borders_cli"
+report = "datafusion.runners.report_runner:run_report_cli"
+prg = "datafusion.runners.address_runner:address_runner_cli"
+pvgis = "datafusion.runners.pvgis_runner:pvgis_runner_cli"
+pvgis_merger = "datafusion.runners.pvgis_merger_runner:pvgis_merger_cli"
+merge = "datafusion.runners.merge_runner:merge_runner_cli"
+postprocessing = "datafusion.runners.postprocessing_runner:postprocessing_runner_cli"
+run = "datafusion.runners.all_runner:run_all_cli"
+gui = "datafusion.runners.gui_runner:gui_runner_cli"
+
+[tool.setuptools.packages.find]
+include = ["datafusion*"]
+exclude = ["airflow"]
+
+[tool.setuptools.package-data]
+datafusion = ["resources/*.xlsx", "resources/*.json", "gui/*.qss"]
+
+
+[tool.ruff]
+# Start with all rules enabled, then customize
+lint.ignore = ["B905"]
+lint.select = ["E", "F", "I", "B", "Q", "N", "W", "UP", "YTT"]
+# C = complexity, D = docstring, S = security
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
