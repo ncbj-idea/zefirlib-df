@@ -78,6 +78,7 @@ run = "datafusion.runners.all_runner:run_all_cli"
 gui = "datafusion.runners.gui_runner:gui_runner_cli"
 
 [tool.setuptools.packages.find]
+where = ["src"]
 include = ["datafusion*"]
 exclude = ["airflow"]
 

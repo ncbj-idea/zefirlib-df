@@ -2,8 +2,7 @@
 
 DataFusion is a Python-based data integration platform designed to gather, combine, and analyze Polish geospatial and complementary datasets. Its primary goal is to create a unified and comprehensive view of building data, heating sources, and solar potential to support climate data analysis and energy transition planning.
 
-The full documentation for the project, including how to prepare input data, configure the pipeline, and interpret results, can be found at:
-[zefir.ncbj.gov.pl](https://zefir.ncbj.gov.pl/dokumentacja)
+### Main project documentation is available on [zefir.ncbj.gov.pl/dokumentacja](https://zefir.ncbj.gov.pl/dokumentacja)
 
 ## ❗️ Required steps
 
@@ -183,7 +182,7 @@ The GUI lets you run the full DataFusion pipeline without the CLI and monitor lo
 Start the GUI:
 
 ```bash
-start
+gui
 ```
 
 Step-by-step usage:
@@ -234,6 +233,7 @@ For detailed configuration documentation, see [configs/README.md](configs/README
 | `make test` | Run tests with coverage |
 | `make clean` | Remove temporary files and venv |
 | `make build-airflow` | Build and start Airflow services |
+| `make build-core` | Build core services without cache |
 | `make build-database` | Build database and run migrations |
 | `make docs` | Build Sphinx documentation |
 

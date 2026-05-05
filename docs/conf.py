@@ -20,7 +20,7 @@ extensions = ["autoapi.extension"]
 pages_root = os.environ.get("pages_root", "")
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
-autoapi_dirs = ["../datafusion"]
+autoapi_dirs = ["../src/datafusion"]
 autoapi_exclude = ["pydantic", "env"]
 autoapi_ignore = ["*/alembic/*", "**/alembic/**"]
 

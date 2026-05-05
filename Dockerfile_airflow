@@ -36,7 +36,7 @@ ENV PROJECT_DIR=${AIRFLOW_USER_HOME_DIR}/datafusion/
 RUN mkdir -p ${PROJECT_DIR} && chown -R airflow:root ${PROJECT_DIR}
 
 COPY --chown=airflow:root pyproject.toml README.md alembic.ini logging.yml ${PROJECT_DIR}
-COPY --chown=airflow:root ./datafusion/ ${PROJECT_DIR}/datafusion/
+COPY --chown=airflow:root ./src/datafusion/ ${PROJECT_DIR}/src/datafusion/
 
 WORKDIR ${PROJECT_DIR}
 
@@ -53,10 +53,10 @@ ENV PROJECT_DIR=${AIRFLOW_USER_HOME_DIR}/datafusion/
 
 COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/dist/*.whl ${PROJECT_DIR}
 COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/alembic.ini ${PROJECT_DIR}
-COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/datafusion/alembic/ ${PROJECT_DIR}/datafusion/alembic/
-COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/datafusion/airflow ${PROJECT_DIR}/datafusion/airflow
-COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/datafusion/sql_queries/ ${PROJECT_DIR}/datafusion/sql_queries/
-COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/datafusion/airflow/dags/ ${AIRFLOW_HOME}/dags/
+COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/src/datafusion/alembic/ ${PROJECT_DIR}/src/datafusion/alembic/
+COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/src/datafusion/airflow ${PROJECT_DIR}/src/datafusion/airflow
+COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/src/datafusion/sql_queries/ ${PROJECT_DIR}/src/datafusion/sql_queries/
+COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/src/datafusion/airflow/dags/ ${AIRFLOW_HOME}/dags/
 
 WORKDIR ${AIRFLOW_USER_HOME_DIR}
 

@@ -36,7 +36,7 @@ RUN --mount=type=cache,target=${UV_CACHE_DIR} \
     uv sync --locked --no-install-project --no-editable
 
 # Layer 2: Copy project and sync
-COPY datafusion/ ./datafusion/
+COPY src/datafusion/ ./src/datafusion/
 RUN --mount=type=cache,target=${UV_CACHE_DIR} \
     uv sync --locked --no-editable
 
@@ -74,11 +74,11 @@ ENV PATH="/app/.venv/bin:$PATH"
 COPY alembic.ini ${PROJECT_DIR}/
 COPY logging.yml ${PROJECT_DIR}/
 COPY configs/ ${PROJECT_DIR}/configs/
-COPY datafusion/alembic/ ${PROJECT_DIR}/datafusion/alembic/
-COPY datafusion/resources/ ${PROJECT_DIR}/datafusion/resources/
-COPY datafusion/sql_queries/ ${PROJECT_DIR}/datafusion/sql_queries/
+COPY src/datafusion/alembic/ ${PROJECT_DIR}/src/datafusion/alembic/
+COPY src/datafusion/resources/ ${PROJECT_DIR}/src/datafusion/resources/
+COPY src/datafusion/sql_queries/ ${PROJECT_DIR}/src/datafusion/sql_queries/
 COPY scripts/ ${PROJECT_DIR}/scripts/
-COPY datafusion/gui/ ${PROJECT_DIR}/datafusion/gui/
+COPY src/datafusion/gui/ ${PROJECT_DIR}/src/datafusion/gui/
 
 RUN chmod +x ${PROJECT_DIR}/scripts/db-migrate.sh
 
@@ -97,6 +97,13 @@ CMD ["run", "--help"]
 # Stage 3: GUI Runtime (optional)
 # ===========================================
 FROM core AS gui
+
+# User configuration (must be re-declared in each stage)
+ARG HOST_UID=1000
+ARG HOST_GID=1000
+
+# Switch to root to install GUI dependencies
+USER root
 
 # Install GUI dependencies on top of core
 RUN --mount=type=cache,target=/var/cache/apt/archives \
@@ -133,6 +140,9 @@ RUN --mount=type=cache,target=/var/cache/apt/archives \
     libfontconfig1 \
     fonts-dejavu-core \
     && rm -rf /var/lib/apt/lists/*
+
+# Switch back to non-root user
+USER $HOST_UID
 
 # Use xcb platform plugin (X11-compatible, works over forwarding)
 ENV QT_QPA_PLATFORM=xcb

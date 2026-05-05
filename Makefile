@@ -57,7 +57,7 @@ endif
 
 
 # Phony targets
-.PHONY: help check-tools install install-dev lint clean docker-gui build-airflow build-database docs test docker-start docker-run
+.PHONY: help check-tools install install-dev lint clean docker-gui build-airflow build-core build-database docs test docker-start docker-run
 
 # Default target
 .DEFAULT_GOAL := help
@@ -74,9 +74,11 @@ help:
 	@echo ""
 	@echo "Docker targets:"
 	@echo "  docker-start   - Start core services (database + app)"
+	@echo "                   FRESH=yes to force rebuild"
 	@echo "  docker-gui     - Start GUI service"
 	@echo "  docker-run     - Run core container interactively"
 	@echo "  build-airflow  - Build and start all services including Airflow"
+	@echo "  build-core     - Build core services without cache"
 	@echo ""
 	@echo "Other targets:"
 	@echo "  docs          - Build documentation"
@@ -84,7 +86,9 @@ help:
 	@echo ""
 	@echo "Examples:"
 	@echo "  make docker-start                    # Start services"
+	@echo "  make docker-start FRESH=yes        # Start with rebuild"
 	@echo "  make docker-run ARGS=\"bdot\"        # Run bdot command"
+	@echo "  make build-core                      # Rebuild core without cache"
 	@echo ""
 	@if [ -z "$(UV)" ]; then \
 		echo "uv not found - using pip for installations"; \
@@ -148,11 +152,17 @@ build-airflow:
 HOST_UID := $(shell id -u)
 HOST_GID := $(shell id -g)
 
+# Docker - Build core without cache
+build-core:
+	@echo "Building core services without cache..."
+	@OST_UID=$(HOST_UID) HOST_GID=$(HOST_GID) docker compose build $(if $(FRESH),--no-cache) core
+	@echo "Core services built successfully."
+
 # Docker - Start core services
 docker-start:
 	@echo "Starting core services (database + app)..."
 	@mkdir -p input output
-	@HOST_UID=$(HOST_UID) HOST_GID=$(HOST_GID) docker compose up core
+	@HOST_UID=$(HOST_UID) HOST_GID=$(HOST_GID) docker compose up $(if $(FRESH),--build) core
 	@echo "Services started. Run 'docker compose logs -f' to view logs."
 
 # Docker - Run core container with arguments
@@ -177,7 +187,7 @@ docs: $(VENV_ACTIVATE)
 	. $(VENV_ACTIVATE) && $(DOCS_INSTALL)
 	@echo "Generating API documentation..."
 	@mkdir -p $(DOCS_SOURCE) $(DOCS_BUILD)
-	sphinx-apidoc -o $(DOCS_SOURCE) .
+	sphinx-apidoc -o $(DOCS_SOURCE) src/
 	@echo "Building HTML documentation..."
 	sphinx-build -b html $(DOCS_SOURCE) $(DOCS_BUILD)
 	@echo "Documentation built successfully."
