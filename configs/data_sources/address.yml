@@ -2,12 +2,10 @@
 # 'TERYT prefix is now automatically derived from the global TERC'
 # 'URL do zbioru danych adresowych'
 # 'URL to the address data set'
-url: https://mapy.geoportal.gov.pl/wss/ext/KrajowaIntegracjaNumeracjiAdresowej # for WFS 2.0
-# url: https://opendata.geoportal.gov.pl/prg/adresy/
+url: https://mapy.geoportal.gov.pl/wss/ext/wfs/KrajowaIntegracjaNumeracjiAdresowej
 # 'Nazwa warstwy dla punktów adresowych'
 # 'Layer name for address points'
-# layer_name: PRG_PunktAdresowy
-layer_name: ms:prg-adresy # for WFS 2.0
+layer_name: adresyUlice:A07_Punkty_adresowe
 # 'Tymczasowa nazwa tabeli dla punktów adresowych'
 # 'Temporary table name for address points'
 tmp_table_name: tmp_address_point_02
@@ -16,11 +14,12 @@ tmp_table_name: tmp_address_point_02
 tmp_table_schema: tmp
 # 'Nazwa kolumny geometrii dla punktów adresowych'
 # 'Name of the geometry column for address points'
-# geometry_column_name: pozycja
-geometry_column_name: msgeometry # for WFS 2.0
+geometry_column_name: geometria
 # 'Wersja protokołu WFS używanego do pobierania danych'
 # 'WFS protocol version used for data retrieval'
 wfs_version: 2.0.0
+# 'Number of address points requested per WFS page'
+page_size: 10000
 # 'Czas oczekiwania na odpowiedź z serwera (w sekundach)'
 # 'Timeout for server response (in seconds)'
 timeout: 300

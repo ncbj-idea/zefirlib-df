@@ -28,10 +28,10 @@ class AddressNormalizer:
         """
         update_sql = text("""
             UPDATE address_point
-            SET miejscowosc = other ->> 'miejscowosc',
-                kod_pocztowy = other ->> 'kod',
-                ulica = other ->> 'ulica',
-                numer_porzadkowy = other ->> 'numer'
+            SET miejscowosc = other ->> 'nazwa_miejscowosci',
+                kod_pocztowy = other ->> 'kod_pocztowy',
+                ulica = other ->> 'nazwa_ulicy',
+                numer_porzadkowy = other ->> 'numer_porzadkowy'
             WHERE address_point.import_id = :import_id
         """)
         _logger.debug("Normalizing address data for import_id=%d", import_id)

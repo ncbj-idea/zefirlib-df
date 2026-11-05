@@ -45,4 +45,6 @@ class AddressRepository:
         ]
         ins = build_insert(columns, raw_table, AddressPoint.__table__)
         _logger.debug("Stm: %s", ins)
-        db.execute(ins, {placeholder: import_id})
+        result = db.execute(ins, {placeholder: import_id})
+        if result.rowcount == 0:
+            raise ValueError(f"No address points inserted from staging table for import id {import_id}")
