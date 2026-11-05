@@ -56,6 +56,7 @@ COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/alembic.ini ${PROJECT_DI
 COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/src/datafusion/alembic/ ${PROJECT_DIR}/src/datafusion/alembic/
 COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/src/datafusion/airflow ${PROJECT_DIR}/src/datafusion/airflow
 COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/src/datafusion/sql_queries/ ${PROJECT_DIR}/src/datafusion/sql_queries/
+COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/src/datafusion/resources/ ${AIRFLOW_USER_HOME_DIR}/src/datafusion/resources/
 COPY --from=builder --chown=airflow:root ${PROJECT_DIR}/src/datafusion/airflow/dags/ ${AIRFLOW_HOME}/dags/
 
 WORKDIR ${AIRFLOW_USER_HOME_DIR}

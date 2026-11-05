@@ -126,4 +126,4 @@ The global TERC code is automatically injected into all sub-configurations that 
 - `report`
 - `merge_config`
 
-This is handled automatically by the configuration loading code in `datafusion/configs/config.py`.
+This is handled automatically by the configuration loading code in `src/datafusion/configs/config.py`.

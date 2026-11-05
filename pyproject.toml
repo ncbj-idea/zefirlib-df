@@ -85,6 +85,11 @@ exclude = ["airflow"]
 [tool.setuptools.package-data]
 datafusion = ["resources/*.xlsx", "resources/*.json", "gui/*.qss"]
 
+[tool.pytest.ini_options]
+# Avoid importing the legacy root-level package instead of the packaged source.
+pythonpath = ["src"]
+addopts = "--import-mode=importlib"
+
 
 [tool.ruff]
 # Start with all rules enabled, then customize

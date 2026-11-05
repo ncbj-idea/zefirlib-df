@@ -8,7 +8,7 @@
 # of the Central Statistical Office (GUS) in the TERYT section, as well as from the Open Data GUS portal,
 # where datasets related to territorial units in Poland are available.'
 # eg. https://eteryt.stat.gov.pl/eTeryt/rejestr_teryt/udostepnianie_danych/baza_teryt/uzytkownicy_indywidualni/wyszukiwanie/wyszukiwanie.aspx?contrast=default
-terc_urzedowy_xml_path: datafusion/resources/TERC_Urzedowy.xml
+terc_urzedowy_xml_path: src/datafusion/resources/TERC_Urzedowy.xml
 # 'TERC number is now defined globally at the top of this config file'
 # 'Warstwy przewodów sieci pobieranych z usługi KIUT.'
 # Allowed layers:
