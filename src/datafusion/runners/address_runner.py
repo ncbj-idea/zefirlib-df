@@ -5,6 +5,7 @@ import click
 from sqlalchemy.engine import Engine
 
 from datafusion.configs.address_config import AddressConfig
+from datafusion.configs.borders_config import BordersConfig
 from datafusion.configs.config import Config
 from datafusion.constants import CONFIG_PATH
 from datafusion.database.db_settings import DBSettings
@@ -25,15 +26,18 @@ class AddressRunner(Runner):
         config: AddressConfig,
         engine: Engine,
         db_settings: DBSettings,
+        borders_config: BordersConfig | None = None,
     ) -> None:
         super().__init__(config=config, engine=engine)
         self.db_settings = db_settings
+        self.borders_config = borders_config
 
     def run(self) -> None:
         AddressReader(
             config=self.config,
             db_engine=self.engine,
             db_settings=self.db_settings,
+            borders_config=self.borders_config,
         ).run()
 
 
@@ -46,6 +50,7 @@ def address_runner(config: Config):
         config=config.address,
         engine=engine,
         db_settings=db_settings,
+        borders_config=config.borders,
     ).run()
 
 

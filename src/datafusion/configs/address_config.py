@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class AddressConfig(BaseModel):
@@ -7,11 +7,12 @@ class AddressConfig(BaseModel):
     url: str
     layer_name: str
     tmp_table_name: str
-    tmp_table_schema: str
-    geometry_column_name: str = "msgeometry"
+    tmp_table_schema: str = "tmp"
+    geometry_column_name: str = "geometria"
     wfs_version: str = "2.0.0"
     timeout: int = 600
     srid: int = 2180
+    page_size: int = Field(default=10000, gt=0)
 
     def model_post_init(self, __context):
         if not self.teryt:

@@ -96,8 +96,8 @@ tests/resources/data_analyzer/ceeb_devices.xlsx
 ```
 2. You will need result of manual inventory check. You can use script to generate them
 ```
-datafusion/postprocessing/generate_mock_inwentaryzacja.py
-uv run datafusion/postprocessing/generate_mock_inwentaryzacja.py output/terc_number/inventory_files/my-mock-inventory.xlsx
+src/datafusion/postprocessing/generate_mock_inwentaryzacja.py
+uv run src/datafusion/postprocessing/generate_mock_inwentaryzacja.py output/terc_number/inventory_files/my-mock-inventory.xlsx
 ```
 
 
@@ -202,7 +202,7 @@ TERC codes can be found on the official  [eTeryt](https://eteryt.stat.gov.pl/eTe
 - The GUI loads YAML configuration and pre-fills fields.
 - It validates inputs and persists updates to configuration files.
 - It runs the selected module in the background and streams logs to the terminal panel.
-- GUI styles live in [datafusion/gui/style.qss](datafusion/gui/style.qss).
+- GUI styles live in [src/datafusion/gui/style.qss](src/datafusion/gui/style.qss).
 
 ### Configuration
 
@@ -239,7 +239,7 @@ For detailed configuration documentation, see [configs/README.md](configs/README
 
 ### Database Migrations
 
-1. Make changes to models in `datafusion/database/models/`
+1. Make changes to models in `src/datafusion/database/models/`
 2. Ensure your `.env` is loaded:
 ```bash
 export $(cat .env | xargs)
@@ -264,7 +264,7 @@ Documentation will be available at `docs/build/index.html`.
 ### Project Structure
 
 ```
-datafusion/
+src/datafusion/
 ├── runners/           # CLI entry points
 ├── readers/           # Data extraction logic
 ├── database/          # SQLAlchemy models and sessions

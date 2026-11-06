@@ -1,6 +1,6 @@
 {
   "terc": "2212011",
-  "terc_urzedowy_xml_path": "datafusion/resources/TERC_Urzedowy.xml",
+  "terc_urzedowy_xml_path": "src/datafusion/resources/TERC_Urzedowy.xml",
   "layers": ["przewod_cieplowniczy", "przewod_gazowy"],
   "polygonization": {
     "grid_existence_threshold": 0.005,
